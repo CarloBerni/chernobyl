@@ -1,5 +1,5 @@
 {
-  "name": "hero",
+  "name": "chernobyl",
   "version": "0.0.1",
   "engines": {
     "node": ">=8.0.0"
@@ -13,7 +13,7 @@
     "type": "git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/bcalou/w1p2021-hero-00#readme",
+  "homepage": "https://github.com/CarloBerni/chernobyl",
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.0.0",
     "babel-eslint": "^8.0.0",
