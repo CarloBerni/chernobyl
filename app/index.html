@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="root">
-      <router-view />
+      <router-view :key="$route.name + ($route.params.id || '')"></router-view>
     </div>
 
     <script src="./app.js"></script>

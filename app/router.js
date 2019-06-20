@@ -2,7 +2,13 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import Home from './components/Home.vue';
-import Page from './components/Page.vue';
+import Intro from './components/Intro.vue';
+import Map from './components/Map.vue';
+import Temoignage from './components/Temoignage.vue';
+import Choix from './components/Choix.vue';
+import Timeline from './components/Timeline.vue';
+
+
 
 Vue.use(Router);
 
@@ -16,9 +22,29 @@ const router = new Router({
       component: Home,
     },
     {
-      path: '/page',
-      name: 'page',
-      component: Page,
+      path: '/intro',
+      name: 'intro',
+      component: Intro,
+    },
+    {
+      path: '/map',
+      name: 'map',
+      component: Map,
+    },
+    {
+      path: '/temoignage/:id',
+      name: 'temoignage',
+      component: Temoignage,
+    },
+    {
+      path: '/choix',
+      name: 'choix',
+      component: Choix,
+    },
+    {
+      path: '/timeline',
+      name: 'timeline',
+      component: Timeline,
     },
     {
       path: '*',

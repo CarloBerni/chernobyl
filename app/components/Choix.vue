@@ -1,8 +1,8 @@
 <template>
   <div class="big-header">
-    <h1>Previous clicks {{ count }}</h1>
+    <h1>{{message}} {{ count }}</h1>
     <br />
-    <router-link class="button" to="/">Go to Home</router-link>
+    <router-link class="button" to="/timeline">suivant</router-link>
   </div>
 </template>
 
@@ -12,7 +12,9 @@ import countService from '../services/countService';
 export default {
   data() {
     return {
-      count: countService.value()
+      count: countService.value(),
+      message: 'choix'
+
     }
   }
 };

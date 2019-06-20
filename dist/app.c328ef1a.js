@@ -15037,7 +15037,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = {
   data: function data() {
     return {
-      message: 'Hello Hetic'
+      message: 'home'
     };
   },
   methods: {
@@ -15067,7 +15067,7 @@ exports.default = _default;
       _vm._v(" "),
       _c("br"),
       _vm._v(" "),
-      _c("router-link", { staticClass: "button", attrs: { to: "/page" } }, [
+      _c("router-link", { staticClass: "button", attrs: { to: "/intro" } }, [
         _vm._v("Go to Page")
       ]),
       _vm._v(" "),
@@ -15109,7 +15109,7 @@ render._withStripped = true
         
       }
     })();
-},{"../services/countService":"services/countService.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Page.vue":[function(require,module,exports) {
+},{"../services/countService":"services/countService.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Intro.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15132,19 +15132,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = {
   data: function data() {
     return {
-      count: _countService.default.value()
+      count: _countService.default.value(),
+      message: 'intro'
     };
   }
 };
 exports.default = _default;
-        var $692e40 = exports.default || module.exports;
+        var $0c4d4b = exports.default || module.exports;
       
-      if (typeof $692e40 === 'function') {
-        $692e40 = $692e40.options;
+      if (typeof $0c4d4b === 'function') {
+        $0c4d4b = $0c4d4b.options;
       }
     
         /* template */
-        Object.assign($692e40, (function () {
+        Object.assign($0c4d4b, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -15153,11 +15154,11 @@ exports.default = _default;
     "div",
     { staticClass: "big-header" },
     [
-      _c("h1", [_vm._v("Previous clicks " + _vm._s(_vm.count))]),
+      _c("h1", [_vm._v(_vm._s(_vm.message) + " " + _vm._s(_vm.count))]),
       _vm._v(" "),
       _c("br"),
       _vm._v(" "),
-      _c("router-link", { staticClass: "button", attrs: { to: "/" } }, [
+      _c("router-link", { staticClass: "button", attrs: { to: "/map" } }, [
         _vm._v("Go to Home")
       ])
     ],
@@ -15184,9 +15185,351 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$692e40', $692e40);
+            api.createRecord('$0c4d4b', $0c4d4b);
           } else {
-            api.reload('$692e40', $692e40);
+            api.reload('$0c4d4b', $0c4d4b);
+          }
+        }
+
+        
+      }
+    })();
+},{"../services/countService":"services/countService.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Map.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _countService = _interopRequireDefault(require("../services/countService"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  data: function data() {
+    return {
+      count: _countService.default.value(),
+      message: 'map'
+    };
+  }
+};
+exports.default = _default;
+        var $d58708 = exports.default || module.exports;
+      
+      if (typeof $d58708 === 'function') {
+        $d58708 = $d58708.options;
+      }
+    
+        /* template */
+        Object.assign($d58708, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "big-header" },
+    [
+      _c("h1", [_vm._v(_vm._s(_vm.message) + " " + _vm._s(_vm.count))]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c(
+        "router-link",
+        { staticClass: "button", attrs: { to: "/temoignage/1" } },
+        [_vm._v("suivant")]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$d58708', $d58708);
+          } else {
+            api.reload('$d58708', $d58708);
+          }
+        }
+
+        
+      }
+    })();
+},{"../services/countService":"services/countService.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Temoignage.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _countService = _interopRequireDefault(require("../services/countService"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  data: function data() {
+    return {
+      count: _countService.default.value(),
+      message: 'temoignage'
+    };
+  }
+};
+exports.default = _default;
+        var $77c20f = exports.default || module.exports;
+      
+      if (typeof $77c20f === 'function') {
+        $77c20f = $77c20f.options;
+      }
+    
+        /* template */
+        Object.assign($77c20f, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "big-header" },
+    [
+      _c("h1", [_vm._v(_vm._s(_vm.message) + " " + _vm._s(_vm.count))]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("router-link", { staticClass: "button", attrs: { to: "/choix" } }, [
+        _vm._v("suivant")
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$77c20f', $77c20f);
+          } else {
+            api.reload('$77c20f', $77c20f);
+          }
+        }
+
+        
+      }
+    })();
+},{"../services/countService":"services/countService.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Choix.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _countService = _interopRequireDefault(require("../services/countService"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  data: function data() {
+    return {
+      count: _countService.default.value(),
+      message: 'choix'
+    };
+  }
+};
+exports.default = _default;
+        var $85a9b1 = exports.default || module.exports;
+      
+      if (typeof $85a9b1 === 'function') {
+        $85a9b1 = $85a9b1.options;
+      }
+    
+        /* template */
+        Object.assign($85a9b1, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "big-header" },
+    [
+      _c("h1", [_vm._v(_vm._s(_vm.message) + " " + _vm._s(_vm.count))]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("router-link", { staticClass: "button", attrs: { to: "/timeline" } }, [
+        _vm._v("suivant")
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$85a9b1', $85a9b1);
+          } else {
+            api.reload('$85a9b1', $85a9b1);
+          }
+        }
+
+        
+      }
+    })();
+},{"../services/countService":"services/countService.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Timeline.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _countService = _interopRequireDefault(require("../services/countService"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  data: function data() {
+    return {
+      count: _countService.default.value(),
+      message: 'timeline'
+    };
+  }
+};
+exports.default = _default;
+        var $4e4f94 = exports.default || module.exports;
+      
+      if (typeof $4e4f94 === 'function') {
+        $4e4f94 = $4e4f94.options;
+      }
+    
+        /* template */
+        Object.assign($4e4f94, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "big-header" },
+    [
+      _c("h1", [_vm._v(_vm._s(_vm.message) + " " + _vm._s(_vm.count))]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("router-link", { staticClass: "button", attrs: { to: "/" } }, [
+        _vm._v("suivant")
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$4e4f94', $4e4f94);
+          } else {
+            api.reload('$4e4f94', $4e4f94);
           }
         }
 
@@ -15207,7 +15550,15 @@ var _vueRouter = _interopRequireDefault(require("vue-router"));
 
 var _Home = _interopRequireDefault(require("./components/Home.vue"));
 
-var _Page = _interopRequireDefault(require("./components/Page.vue"));
+var _Intro = _interopRequireDefault(require("./components/Intro.vue"));
+
+var _Map = _interopRequireDefault(require("./components/Map.vue"));
+
+var _Temoignage = _interopRequireDefault(require("./components/Temoignage.vue"));
+
+var _Choix = _interopRequireDefault(require("./components/Choix.vue"));
+
+var _Timeline = _interopRequireDefault(require("./components/Timeline.vue"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15221,9 +15572,25 @@ var router = new _vueRouter.default({
     name: 'home',
     component: _Home.default
   }, {
-    path: '/page',
-    name: 'page',
-    component: _Page.default
+    path: '/intro',
+    name: 'intro',
+    component: _Intro.default
+  }, {
+    path: '/map',
+    name: 'map',
+    component: _Map.default
+  }, {
+    path: '/temoignage/:id',
+    name: 'temoignage',
+    component: _Temoignage.default
+  }, {
+    path: '/choix',
+    name: 'choix',
+    component: _Choix.default
+  }, {
+    path: '/timeline',
+    name: 'timeline',
+    component: _Timeline.default
   }, {
     path: '*',
     redirect: {
@@ -15233,7 +15600,7 @@ var router = new _vueRouter.default({
 });
 var _default = router;
 exports.default = _default;
-},{"vue":"../node_modules/vue/dist/vue.common.js","vue-router":"../node_modules/vue-router/dist/vue-router.esm.js","./components/Home.vue":"components/Home.vue","./components/Page.vue":"components/Page.vue"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"vue":"../node_modules/vue/dist/vue.common.js","vue-router":"../node_modules/vue-router/dist/vue-router.esm.js","./components/Home.vue":"components/Home.vue","./components/Intro.vue":"components/Intro.vue","./components/Map.vue":"components/Map.vue","./components/Temoignage.vue":"components/Temoignage.vue","./components/Choix.vue":"components/Choix.vue","./components/Timeline.vue":"components/Timeline.vue"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -15347,7 +15714,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50490" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50525" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
