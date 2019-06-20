@@ -1,36 +1,42 @@
 @import 'reset';
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
-$hetic-green: #0de595;
+@font-face {
+  font-family: "ProductSansBold";
+  src: url("../font/ProductSansBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ProductSansRegular";
+  src: url("../font/ProductSansRegular.ttf") format("truetype");
+}
 
 body,
 button,
 input,
 select,
 textarea {
-  font-family: 'Roboto';
+  font-family: "ProductSansRegular";
 }
 
-.big-header {
-  background-color: $hetic-green;
+.big-container {
   height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-
-  color: white;
 }
 
 .button {
-  color: $hetic-green;
+  margin-top: 5%;
   text-decoration: none;
-  background: white;
-  padding: 5px;
-  border-radius: 5px;
+  background: linear-gradient(173.13deg, #720103 0%, #590004 83.33%);
+  padding: 20px;
   display: inline-block;
-  border: none;
+  font-size: 1.6em;
   cursor: pointer;
+  color: white;
+  &:hover {
+    background: white;
+    color: #720103;
+  }
 }

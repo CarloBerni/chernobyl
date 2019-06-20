@@ -14739,7 +14739,74 @@ function () {
 }();
 
 module.exports = new CountService();
-},{}],"../node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
+},{}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = Object.create(null)
@@ -15031,14 +15098,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
-//
-//
 var _default = {
   data: function data() {
-    return {
-      message: 'home'
-    };
+    return {};
   },
   methods: {
     handleClick: function handleClick() {
@@ -15061,20 +15123,17 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "big-header" },
+    { staticClass: "big-container" },
     [
-      _c("h1", [_vm._v(_vm._s(_vm.message))]),
-      _vm._v(" "),
-      _c("br"),
+      _c("img", {
+        attrs: {
+          src: "/TCHERNOBYL 1.f03530ef.png",
+          alt: "titre tchernobyl"
+        }
+      }),
       _vm._v(" "),
       _c("router-link", { staticClass: "button", attrs: { to: "/intro" } }, [
-        _vm._v("Go to Page")
-      ]),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("button", { staticClass: "button", on: { click: _vm.handleClick } }, [
-        _vm._v("Click me up")
+        _vm._v("Continue")
       ])
     ],
     1
@@ -15087,7 +15146,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: null,
+            _scopeId: "data-v-ca6720",
             functional: undefined
           };
         })());
@@ -15107,9 +15166,13 @@ render._withStripped = true
         }
 
         
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
       }
     })();
-},{"../services/countService":"services/countService.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Intro.vue":[function(require,module,exports) {
+},{"../services/countService":"services/countService.js","./../assets/images/TCHERNOBYL 1.png":[["TCHERNOBYL 1.f03530ef.png","assets/images/TCHERNOBYL 1.png"],"assets/images/TCHERNOBYL 1.png"],"./../assets/images/Pripyat__bg.png":[["Pripyat__bg.1b1d0db2.png","assets/images/Pripyat__bg.png"],"assets/images/Pripyat__bg.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Intro.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15133,7 +15196,7 @@ var _default = {
   data: function data() {
     return {
       count: _countService.default.value(),
-      message: 'intro'
+      message: "intro"
     };
   }
 };
@@ -15152,14 +15215,18 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "big-header" },
+    { staticClass: "big-container" },
     [
-      _c("h1", [_vm._v(_vm._s(_vm.message) + " " + _vm._s(_vm.count))]),
+      _c("h1", [
+        _vm._v(
+          "A travers ce web-documentaire vous allez pour retracer la première semaine de la catastrophe de tchernobyl à travers les différent témoignages des principaux acteurs qui ont oeuvrés a contenir la catastrophe."
+        )
+      ]),
       _vm._v(" "),
       _c("br"),
       _vm._v(" "),
       _c("router-link", { staticClass: "button", attrs: { to: "/map" } }, [
-        _vm._v("Go to Home")
+        _vm._v("Se rendre à Pripyat")
       ])
     ],
     1
@@ -15172,7 +15239,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: null,
+            _scopeId: "data-v-0c4d4b",
             functional: undefined
           };
         })());
@@ -15192,9 +15259,13 @@ render._withStripped = true
         }
 
         
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
       }
     })();
-},{"../services/countService":"services/countService.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Map.vue":[function(require,module,exports) {
+},{"../services/countService":"services/countService.js","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Map.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15237,7 +15308,7 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "big-header" },
+    { staticClass: "big-container" },
     [
       _c("h1", [_vm._v(_vm._s(_vm.message) + " " + _vm._s(_vm.count))]),
       _vm._v(" "),
@@ -15324,7 +15395,7 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "big-header" },
+    { staticClass: "big-container" },
     [
       _c("h1", [_vm._v(_vm._s(_vm.message) + " " + _vm._s(_vm.count))]),
       _vm._v(" "),
@@ -15409,7 +15480,7 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "big-header" },
+    { staticClass: "big-container" },
     [
       _c("h1", [_vm._v(_vm._s(_vm.message) + " " + _vm._s(_vm.count))]),
       _vm._v(" "),
@@ -15494,7 +15565,7 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "big-header" },
+    { staticClass: "big-container" },
     [
       _c("h1", [_vm._v(_vm._s(_vm.message) + " " + _vm._s(_vm.count))]),
       _vm._v(" "),
@@ -15600,79 +15671,12 @@ var router = new _vueRouter.default({
 });
 var _default = router;
 exports.default = _default;
-},{"vue":"../node_modules/vue/dist/vue.common.js","vue-router":"../node_modules/vue-router/dist/vue-router.esm.js","./components/Home.vue":"components/Home.vue","./components/Intro.vue":"components/Intro.vue","./components/Map.vue":"components/Map.vue","./components/Temoignage.vue":"components/Temoignage.vue","./components/Choix.vue":"components/Choix.vue","./components/Timeline.vue":"components/Timeline.vue"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/scss/styles.scss":[function(require,module,exports) {
+},{"vue":"../node_modules/vue/dist/vue.common.js","vue-router":"../node_modules/vue-router/dist/vue-router.esm.js","./components/Home.vue":"components/Home.vue","./components/Intro.vue":"components/Intro.vue","./components/Map.vue":"components/Map.vue","./components/Temoignage.vue":"components/Temoignage.vue","./components/Choix.vue":"components/Choix.vue","./components/Timeline.vue":"components/Timeline.vue"}],"assets/scss/styles.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app.js":[function(require,module,exports) {
+},{"./../font/ProductSansBold.ttf":[["ProductSansBold.86aced2f.ttf","assets/font/ProductSansBold.ttf"],"assets/font/ProductSansBold.ttf"],"./../font/ProductSansRegular.ttf":[["ProductSansRegular.f1a73bd0.ttf","assets/font/ProductSansRegular.ttf"],"assets/font/ProductSansRegular.ttf"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -15714,7 +15718,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50805" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52145" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

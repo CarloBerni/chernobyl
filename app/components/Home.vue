@@ -1,10 +1,7 @@
 <template>
-  <div class="big-header">
-    <h1>{{ message }}</h1>
-    <br />
-    <router-link class="button" to="/intro">Go to Page</router-link>
-    <br />
-    <button class="button" @click="handleClick">Click me up</button>
+  <div class="big-container">
+    <img src="../assets/images/TCHERNOBYL 1.png" alt="titre tchernobyl">
+    <router-link class="button" to="/intro">Continue</router-link>
   </div>
 </template>
 
@@ -14,7 +11,6 @@ import countService from '../services/countService';
 export default {
   data() {
     return {
-      message: 'home'
     };
   },
   methods: {
@@ -24,3 +20,17 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+
+.big-container {
+  background: url('../assets/images/Pripyat__bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  img {
+    height: 20%;
+    width: 90%;
+  }
+}
+</style>
+

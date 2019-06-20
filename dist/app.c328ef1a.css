@@ -1,8 +1,25 @@
+.big-container[data-v-ca6720] {
+  background: url("/Pripyat__bg.1b1d0db2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.big-container img[data-v-ca6720] {
+  height: 20%;
+  width: 90%;
+}
+.big-container[data-v-0c4d4b] {
+  background-color: black;
+}
+.big-container h1[data-v-0c4d4b] {
+  color: white;
+  font-size: 1.6em;
+  margin-left: 200px;
+  margin-right: 200px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 html,
 body,
 div,
@@ -134,34 +151,44 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "ProductSansBold";
+  src: url("/ProductSansBold.86aced2f.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ProductSansRegular";
+  src: url("/ProductSansRegular.f1a73bd0.ttf") format("truetype");
+}
 body,
 button,
 input,
 select,
 textarea {
-  font-family: "Roboto";
+  font-family: "ProductSansRegular";
 }
 
-.big-header {
-  background-color: #0de595;
+.big-container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  color: white;
 }
 
 .button {
-  color: #0de595;
+  margin-top: 5%;
   text-decoration: none;
-  background: white;
-  padding: 5px;
-  border-radius: 5px;
+  background: linear-gradient(173.13deg, #720103 0%, #590004 83.33%);
+  padding: 20px;
   display: inline-block;
-  border: none;
+  font-size: 1.6em;
   cursor: pointer;
+  color: white;
+}
+.button:hover {
+  background: white;
+  color: #720103;
 }
 
 /*# sourceMappingURL=/app.c328ef1a.css.map */

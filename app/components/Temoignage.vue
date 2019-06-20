@@ -1,5 +1,5 @@
 <template>
-  <div class="big-header">
+  <div class="big-container">
     <h1>{{message}} {{ count }}</h1>
     <br />
     <router-link class="button" to="/choix">suivant</router-link>
