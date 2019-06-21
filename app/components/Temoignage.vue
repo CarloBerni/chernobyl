@@ -73,12 +73,7 @@ export default {
       document.querySelector("#fullpage").appendChild(section);
 
       // creating the section menu element
-      var sectionMenuItem = document.createElement("li");
-      sectionMenuItem.setAttribute(
-        "data-menuanchor",
-        "page" + newSectionNumber
-      );
-      sectionMenuItem.innerHTML = `<a href="#page${newSectionNumber}">Section${newSectionNumber}</a>`;
+
 
       // adding anchor for the section
       this.options.anchors.push(`page${newSectionNumber}`);

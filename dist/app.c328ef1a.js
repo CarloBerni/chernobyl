@@ -19448,10 +19448,7 @@ var _default = {
     section.innerHTML = "<h3>Section ".concat(newSectionNumber, "</h3>"); // adding section
 
     document.querySelector("#fullpage").appendChild(section); // creating the section menu element
-
-    var sectionMenuItem = document.createElement("li");
-    sectionMenuItem.setAttribute("data-menuanchor", "page" + newSectionNumber);
-    sectionMenuItem.innerHTML = "<a href=\"#page".concat(newSectionNumber, "\">Section").concat(newSectionNumber, "</a>"); // adding anchor for the section
+    // adding anchor for the section
 
     this.options.anchors.push("page".concat(newSectionNumber)); // we have to call `update` manually as DOM changes won't fire updates
     // requires the use of the attribute ref="fullpage" on the
@@ -19767,7 +19764,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52079" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53273" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
