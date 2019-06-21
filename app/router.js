@@ -5,7 +5,6 @@ import Home from './components/Home.vue';
 import Intro from './components/Intro.vue';
 import Map from './components/Map.vue';
 import Temoignage from './components/Temoignage.vue';
-import Choix from './components/Choix.vue';
 import Timeline from './components/Timeline.vue';
 
 
@@ -35,11 +34,6 @@ const router = new Router({
       path: '/temoignage/:id',
       name: 'temoignage',
       component: Temoignage,
-    },
-    {
-      path: '/choix',
-      name: 'choix',
-      component: Choix,
     },
     {
       path: '/timeline',

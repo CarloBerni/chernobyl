@@ -1,18 +1,16 @@
 <template>
   <div class="big-container">
-    <h1>{{message}} {{ count }}</h1>
+    <h1>{{message}} </h1>
     <br />
     <router-link class="button" to="/">suivant</router-link>
   </div>
 </template>
 
 <script>
-import countService from '../services/countService';
 
 export default {
   data() {
     return {
-      count: countService.value(),
       message: 'timeline'
 
     }

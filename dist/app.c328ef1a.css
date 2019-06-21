@@ -16,6 +16,53 @@
   margin-left: 200px;
   margin-right: 200px;
 }
+.section[data-v-77c20f] {
+  position: relative;
+  text-align: center;
+}
+#section-1 h2[data-v-77c20f] {
+  color: #fff;
+  font-size: 10em;
+  font-weight: 900;
+}
+#section-1 h1[data-v-77c20f] {
+  font-size: 2em;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  margin: 1.5em auto 1em auto;
+  color: #35495e;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+#section-1 li[data-v-77c20f] {
+  display: inline-block;
+  margin: 1.25em 0.3em;
+}
+.section-1-button[data-v-77c20f] {
+  padding: 0.93em 1.87em;
+  background: #35495e;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+}
+h3[data-v-77c20f] {
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+#logo[data-v-77c20f] {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  font-weight: bold;
+  z-index: 99;
+  font-size: 1.9em;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)

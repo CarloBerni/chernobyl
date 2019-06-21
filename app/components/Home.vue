@@ -6,18 +6,13 @@
 </template>
 
 <script>
-import countService from '../services/countService';
 
 export default {
   data() {
     return {
     };
   },
-  methods: {
-    handleClick() {
-      countService.increment();
-    }
-  }
+  
 };
 </script>
 
