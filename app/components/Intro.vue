@@ -6,7 +6,7 @@
       <p>Immergez vous dans la ville de Prypiat et allez à leur rencontre à fin de receuillir les différents témoignages en cliquant sur la <span>carte</span>.</p>
       <router-link class="button" to="/map">
         Se rendre à Pripyat
-        <img src="../assets/images/map.png" alt="map">
+        <img src="../assets/images/map-min.png" alt="map">
       </router-link>
     </div>
     <p
@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 .big-container {
-  background: url("../assets/images/bg__intro.png");
+  background: url("../assets/images/bg__intro-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;

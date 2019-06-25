@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="section__2">
-      <video class="video" autoplay muted>
+      <video class="video" autoplay muted loop>
         <source v-bind:src="step.video__1">
       </video>
     </div>

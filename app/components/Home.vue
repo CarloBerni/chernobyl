@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .big-container {
-  background: url("../assets/images/Pripyat__bg.png");
+  background: url("../assets/images/Pripyat__bg-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;

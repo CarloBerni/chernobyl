@@ -15137,7 +15137,7 @@ render._withStripped = true
       
       }
     })();
-},{"./../assets/images/Pripyat__bg.png":[["Pripyat__bg.1b1d0db2.png","assets/images/Pripyat__bg.png"],"assets/images/Pripyat__bg.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Intro.vue":[function(require,module,exports) {
+},{"./../assets/images/Pripyat__bg-min.png":[["Pripyat__bg-min.674789ce.png","assets/images/Pripyat__bg-min.png"],"assets/images/Pripyat__bg-min.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Intro.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -15195,7 +15195,7 @@ exports.default = _default;
         _c("router-link", { staticClass: "button", attrs: { to: "/map" } }, [
           _vm._v("\n      Se rendre à Pripyat\n      "),
           _c("img", {
-            attrs: { src: "/map.44b3d828.png", alt: "map" }
+            attrs: { src: "/map-min.7ca13b0b.png", alt: "map" }
           })
         ])
       ],
@@ -15285,7 +15285,7 @@ render._withStripped = true
       
       }
     })();
-},{"./../assets/images/map.png":[["map.44b3d828.png","assets/images/map.png"],"assets/images/map.png"],"./../assets/images/bg__intro.png":[["bg__intro.c8448517.png","assets/images/bg__intro.png"],"assets/images/bg__intro.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Map.vue":[function(require,module,exports) {
+},{"./../assets/images/map-min.png":[["map-min.7ca13b0b.png","assets/images/map-min.png"],"assets/images/map-min.png"],"./../assets/images/bg__intro-min.png":[["bg__intro-min.4cd81d6c.png","assets/images/bg__intro-min.png"],"assets/images/bg__intro-min.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Map.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25422,11 +25422,11 @@ var _default = {
     "sentence__6": "<< J’ai survolé 50 fois le réacteur numéro 4 en hélicoptère. J’ai pris des photos à toutes les étapes de la liquidation de cette catastrophe. J’ai photographié des gens descendant dans la mine, les soldats « liquidateurs » travaillant sur le toit de la centrale.” Personne n’avait jamais vu une chose pareille. >>",
     "sentence__7": "<< Au début, le Japon et l’Allemagne avaient envoyé des robots, mais à cause de l’irradiation, ils se sont bloqués. Je les ai photographiés depuis l’hélicoptère pendant qu’ils s’écroulaient. Après cela, des milliers de soldats ont dû nettoyer le graphite radioactif et le toit du troisième bloc de la centrale d’une surface de 250 mètres carrés. >>",
     "background__slider": "https://i.goopics.net/K8wm3.png",
-    "image__slider": "https://i.goopics.net/2Wn3J.png",
-    "image__slider__2": "https://i.goopics.net/oAp4e.png",
-    "image__slider__3": "https://i.goopics.net/8gkdw.png",
-    "image__slider__4": "https://i.goopics.net/qvp5Q.png",
-    "image__slider__5": "https://i.goopics.net/boj2d.png",
+    "image__slider": "https://i.goopics.net/VvmDV.png",
+    "image__slider__2": "https://i.goopics.net/qvpGk.png",
+    "image__slider__3": "https://i.goopics.net/kjVky.png",
+    "image__slider__4": "https://i.goopics.net/aOjKZ.png",
+    "image__slider__5": "https://i.goopics.net/gE1Ko.png",
     "video__1": mp4.igor
   }]
 };
@@ -25589,7 +25589,7 @@ exports.default = _default;
         "video",
         {
           staticClass: "video",
-          attrs: { autoplay: "", muted: "" },
+          attrs: { autoplay: "", muted: "", loop: "" },
           domProps: { muted: true }
         },
         [_c("source", { attrs: { src: _vm.step.video__1 } })]
@@ -25765,86 +25765,7 @@ render._withStripped = true
       
       }
     })();
-},{"../data.js":"data.js","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Timeline.vue":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-//
-//
-//
-//
-//
-//
-//
-//
-var _default = {
-  data: function data() {
-    return {
-      message: 'timeline'
-    };
-  }
-};
-exports.default = _default;
-        var $4e4f94 = exports.default || module.exports;
-      
-      if (typeof $4e4f94 === 'function') {
-        $4e4f94 = $4e4f94.options;
-      }
-    
-        /* template */
-        Object.assign($4e4f94, (function () {
-          var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "big-container" },
-    [
-      _c("h1", [_vm._v(_vm._s(_vm.message) + " ")]),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("router-link", { staticClass: "button", attrs: { to: "/" } }, [
-        _vm._v("suivant")
-      ])
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-          return {
-            render: render,
-            staticRenderFns: staticRenderFns,
-            _compiled: true,
-            _scopeId: null,
-            functional: undefined
-          };
-        })());
-      
-    /* hot reload */
-    (function () {
-      if (module.hot) {
-        var api = require('vue-hot-reload-api');
-        api.install(require('vue'));
-        if (api.compatible) {
-          module.hot.accept();
-          if (!module.hot.data) {
-            api.createRecord('$4e4f94', $4e4f94);
-          } else {
-            api.reload('$4e4f94', $4e4f94);
-          }
-        }
-
-        
-      }
-    })();
-},{"vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"router.js":[function(require,module,exports) {
+},{"../data.js":"data.js","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"router.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25863,8 +25784,6 @@ var _Intro = _interopRequireDefault(require("./components/Intro.vue"));
 var _Map = _interopRequireDefault(require("./components/Map.vue"));
 
 var _Temoignage = _interopRequireDefault(require("./components/Temoignage.vue"));
-
-var _Timeline = _interopRequireDefault(require("./components/Timeline.vue"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25890,10 +25809,6 @@ var router = new _vueRouter.default({
     name: 'temoignage',
     component: _Temoignage.default
   }, {
-    path: '/timeline',
-    name: 'timeline',
-    component: _Timeline.default
-  }, {
     path: '*',
     redirect: {
       name: 'home'
@@ -25902,7 +25817,7 @@ var router = new _vueRouter.default({
 });
 var _default = router;
 exports.default = _default;
-},{"vue":"../node_modules/vue/dist/vue.common.js","vue-router":"../node_modules/vue-router/dist/vue-router.esm.js","./components/Home.vue":"components/Home.vue","./components/Intro.vue":"components/Intro.vue","./components/Map.vue":"components/Map.vue","./components/Temoignage.vue":"components/Temoignage.vue","./components/Timeline.vue":"components/Timeline.vue"}],"assets/scss/styles.scss":[function(require,module,exports) {
+},{"vue":"../node_modules/vue/dist/vue.common.js","vue-router":"../node_modules/vue-router/dist/vue-router.esm.js","./components/Home.vue":"components/Home.vue","./components/Intro.vue":"components/Intro.vue","./components/Map.vue":"components/Map.vue","./components/Temoignage.vue":"components/Temoignage.vue"}],"assets/scss/styles.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -25953,7 +25868,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62717" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63642" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

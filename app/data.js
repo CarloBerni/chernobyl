@@ -21,11 +21,11 @@ export default {
       "sentence__6": "<< J’ai survolé 50 fois le réacteur numéro 4 en hélicoptère. J’ai pris des photos à toutes les étapes de la liquidation de cette catastrophe. J’ai photographié des gens descendant dans la mine, les soldats « liquidateurs » travaillant sur le toit de la centrale.” Personne n’avait jamais vu une chose pareille. >>",
       "sentence__7": "<< Au début, le Japon et l’Allemagne avaient envoyé des robots, mais à cause de l’irradiation, ils se sont bloqués. Je les ai photographiés depuis l’hélicoptère pendant qu’ils s’écroulaient. Après cela, des milliers de soldats ont dû nettoyer le graphite radioactif et le toit du troisième bloc de la centrale d’une surface de 250 mètres carrés. >>",
       "background__slider": "https://i.goopics.net/K8wm3.png",
-      "image__slider": "https://i.goopics.net/2Wn3J.png",
-      "image__slider__2": "https://i.goopics.net/oAp4e.png",
-      "image__slider__3": "https://i.goopics.net/8gkdw.png",
-      "image__slider__4": "https://i.goopics.net/qvp5Q.png",
-      "image__slider__5": "https://i.goopics.net/boj2d.png",
+      "image__slider": "https://i.goopics.net/VvmDV.png",
+      "image__slider__2": "https://i.goopics.net/qvpGk.png",
+      "image__slider__3": "https://i.goopics.net/kjVky.png",
+      "image__slider__4": "https://i.goopics.net/aOjKZ.png",
+      "image__slider__5": "https://i.goopics.net/gE1Ko.png",
       "video__1": mp4.igor
     }
   ]
