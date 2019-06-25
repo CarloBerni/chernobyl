@@ -35,6 +35,7 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  overflow: hidden;
 }
 .container__intro[data-v-0c4d4b] {
   text-align: center;
@@ -207,8 +208,11 @@
 .big-container .section__2[data-v-77c20f] {
   height: 100vh;
   width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
+}
+.big-container .section__2 .video[data-v-77c20f] {
+  width: 100vw;
+  height: 100vh;
 }
 .big-container .section__3[data-v-77c20f] {
   height: 100vh;
@@ -251,6 +255,9 @@
   height: 100%;
   width: 100%;
 }
+.big-container .section__4 .carousel-3d-container .carousel-3d-slide[data-v-77c20f] {
+  padding: 10px;
+}
 .big-container .section__5[data-v-77c20f] {
   height: 100vh;
   width: 100vw;
@@ -285,9 +292,6 @@
 }
 .big-container .section__6 .buttons .button[data-v-77c20f] {
   margin: 20px;
-}
-.carousel-3d-container .carousel-3d-slide[data-v-77c20f] {
-  padding: 10px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

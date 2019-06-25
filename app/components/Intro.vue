@@ -36,6 +36,7 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  overflow: hidden;
 }
 .container__intro {
   text-align: center;

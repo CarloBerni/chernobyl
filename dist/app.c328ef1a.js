@@ -25387,8 +25387,23 @@ render._withStripped = true
       
       }
     })();
-},{"./../assets/images/Igor__Kostin.jpg":[["Igor__Kostin.0b70b8c7.jpg","assets/images/Igor__Kostin.jpg"],"assets/images/Igor__Kostin.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"data.json":[function(require,module,exports) {
+},{"./../assets/images/Igor__Kostin.jpg":[["Igor__Kostin.0b70b8c7.jpg","assets/images/Igor__Kostin.jpg"],"assets/images/Igor__Kostin.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"assets/images/igor.mp4":[function(require,module,exports) {
+module.exports = "/igor.1b54c3dc.mp4";
+},{}],"assets/images/*.mp4":[function(require,module,exports) {
 module.exports = {
+  "igor": require("./igor.mp4")
+};
+},{"./igor.mp4":"assets/images/igor.mp4"}],"data.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var mp4 = require('../app/assets/images/*.mp4');
+
+var _default = {
   "steps": [{
     "id": 1,
     "background__1": "https://i.goopics.net/OKPj7.png",
@@ -25412,10 +25427,11 @@ module.exports = {
     "image__slider__3": "https://i.goopics.net/8gkdw.png",
     "image__slider__4": "https://i.goopics.net/qvp5Q.png",
     "image__slider__5": "https://i.goopics.net/boj2d.png",
-    "video__1": ""
+    "video__1": mp4.igor
   }]
 };
-},{}],"components/Temoignage.vue":[function(require,module,exports) {
+exports.default = _default;
+},{"../app/assets/images/*.mp4":"assets/images/*.mp4"}],"components/Temoignage.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25423,15 +25439,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _data = _interopRequireDefault(require("../data.json"));
+var _data = _interopRequireDefault(require("../data.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//
-//
-//
-//
-//
 //
 //
 //
@@ -25573,7 +25584,17 @@ exports.default = _default;
       ]
     ),
     _vm._v(" "),
-    _vm._m(0),
+    _c("div", { staticClass: "section__2" }, [
+      _c(
+        "video",
+        {
+          staticClass: "video",
+          attrs: { autoplay: "", muted: "" },
+          domProps: { muted: true }
+        },
+        [_c("source", { attrs: { src: _vm.step.video__1 } })]
+      )
+    ]),
     _vm._v(" "),
     _c(
       "div",
@@ -25711,26 +25732,7 @@ exports.default = _default;
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section__2" }, [
-      _c("iframe", {
-        attrs: {
-          width: "1680",
-          height: "971",
-          src: "https://www.youtube.com/embed/dr7dWV3K7r8?controls=0",
-          frameborder: "0",
-          allow:
-            "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-          allowfullscreen: ""
-        }
-      })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
           return {
@@ -25763,7 +25765,7 @@ render._withStripped = true
       
       }
     })();
-},{"../data.json":"data.json","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Timeline.vue":[function(require,module,exports) {
+},{"../data.js":"data.js","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Timeline.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25951,7 +25953,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57671" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62464" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

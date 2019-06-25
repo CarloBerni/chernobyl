@@ -10,14 +10,9 @@
       </div>
     </div>
     <div class="section__2">
-      <iframe
-        width="1680"
-        height="971"
-        src="https://www.youtube.com/embed/dr7dWV3K7r8?controls=0"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <video class="video" autoplay muted>
+        <source v-bind:src="step.video__1">
+      </video>
     </div>
     <div class="section__3" v-bind:style="{ backgroundImage: 'url(' + step.background__2 + ')' }">
       <div class="container__text">
@@ -71,7 +66,7 @@
 </template>
 
 <script>
-import game from "../data.json";
+import game from "../data.js";
 
 export default {
   data() {
@@ -141,8 +136,11 @@ export default {
   .section__2 {
     height: 100vh;
     width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
+    .video {
+    width: 100vw;
+    height: 100vh;
+    }
   }
   .section__3 {
     height: 100vh;
@@ -184,6 +182,11 @@ export default {
       height: 100%;
       width: 100%;
     }
+    .carousel-3d-container {
+  .carousel-3d-slide {
+    padding: 10px;
+  }
+}
   }
   .section__5 {
     height: 100vh;
@@ -222,10 +225,6 @@ export default {
   }
 }
 
-.carousel-3d-container {
-  .carousel-3d-slide {
-    padding: 10px;
-  }
-}
+
 </style>
 
