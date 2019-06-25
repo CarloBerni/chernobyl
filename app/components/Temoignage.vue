@@ -9,7 +9,16 @@
         <p class="big__texte" v-if="$route.params.id">{{step.texte__3}}</p>
       </div>
     </div>
-    <div class="section__2" v-bind:style="{ video: 'url(' + step.video__1 + ')' }"></div>
+    <div class="section__2">
+      <iframe
+        width="1680"
+        height="971"
+        src="https://www.youtube.com/embed/dr7dWV3K7r8?controls=0"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
     <div class="section__3" v-bind:style="{ backgroundImage: 'url(' + step.background__2 + ')' }">
       <div class="container__text">
         <h1 class="texte__title__right" v-if="$route.params.id">{{step.sentence__1}}</h1>
@@ -21,8 +30,11 @@
         <p v-if="$route.params.id">{{step.sentence__5}}</p>
       </div>
     </div>
-    <div class="section__4" v-bind:style="{ backgroundImage: 'url(' + step.background__slider + ')' }">
-      <carousel-3d style="margin-top: 60px;"   :width="1300" :height="850">
+    <div
+      class="section__4"
+      v-bind:style="{ backgroundImage: 'url(' + step.background__slider + ')' }"
+    >
+      <carousel-3d style="margin-top: 60px;" :width="1300" :height="850">
         <slide :index="0">
           <img class="image__slider" v-bind:src="step.image__slider">
         </slide>
@@ -210,11 +222,9 @@ export default {
   }
 }
 
-
 .carousel-3d-container {
   .carousel-3d-slide {
     padding: 10px;
-    
   }
 }
 </style>
