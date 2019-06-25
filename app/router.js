@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-
 import Home from './components/Home.vue';
 import Intro from './components/Intro.vue';
 import Map from './components/Map.vue';

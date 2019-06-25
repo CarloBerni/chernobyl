@@ -54,8 +54,9 @@
       </div>
     </div>
     <div class="section__6">
-      <h3>Section 3</h3>
-      <p>bonjour</p>
+      <video class="video" autoplay loop>
+        <source v-bind:src="step.video__2">
+      </video>
       <div class="buttons">
         <router-link class="button" to="/map">Map</router-link>
         <router-link class="button" to="/map">Map</router-link>
@@ -138,8 +139,8 @@ export default {
     width: 100vw;
     background-color: black;
     .video {
-    width: 100vw;
-    height: 100vh;
+      width: 100vw;
+      height: 100vh;
     }
   }
   .section__3 {
@@ -183,10 +184,10 @@ export default {
       width: 100%;
     }
     .carousel-3d-container {
-  .carousel-3d-slide {
-    padding: 10px;
-  }
-}
+      .carousel-3d-slide {
+        padding: 10px;
+      }
+    }
   }
   .section__5 {
     height: 100vh;
@@ -211,8 +212,11 @@ export default {
   .section__6 {
     height: 100vh;
     width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
+    .video {
+      width: 100vw;
+      height: 100vh;
+    }
     .buttons {
       display: flex;
       flex-direction: row;
@@ -224,7 +228,5 @@ export default {
     }
   }
 }
-
-
 </style>
 

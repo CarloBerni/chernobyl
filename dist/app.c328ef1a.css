@@ -281,8 +281,11 @@
 .big-container .section__6[data-v-77c20f] {
   height: 100vh;
   width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
+}
+.big-container .section__6 .video[data-v-77c20f] {
+  width: 100vw;
+  height: 100vh;
 }
 .big-container .section__6 .buttons[data-v-77c20f] {
   display: flex;

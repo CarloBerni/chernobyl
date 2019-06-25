@@ -25389,11 +25389,14 @@ render._withStripped = true
     })();
 },{"./../assets/images/Igor__Kostin.jpg":[["Igor__Kostin.0b70b8c7.jpg","assets/images/Igor__Kostin.jpg"],"assets/images/Igor__Kostin.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"assets/images/igor.mp4":[function(require,module,exports) {
 module.exports = "/igor.1b54c3dc.mp4";
+},{}],"assets/images/outroIgor.mp4":[function(require,module,exports) {
+module.exports = "/outroIgor.fe28a8be.mp4";
 },{}],"assets/images/*.mp4":[function(require,module,exports) {
 module.exports = {
-  "igor": require("./igor.mp4")
+  "igor": require("./igor.mp4"),
+  "outroIgor": require("./outroIgor.mp4")
 };
-},{"./igor.mp4":"assets/images/igor.mp4"}],"data.js":[function(require,module,exports) {
+},{"./igor.mp4":"assets/images/igor.mp4","./outroIgor.mp4":"assets/images/outroIgor.mp4"}],"data.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25427,7 +25430,8 @@ var _default = {
     "image__slider__3": "https://i.goopics.net/kjVky.png",
     "image__slider__4": "https://i.goopics.net/aOjKZ.png",
     "image__slider__5": "https://i.goopics.net/gE1Ko.png",
-    "video__1": mp4.igor
+    "video__1": mp4.igor,
+    "video__2": mp4.outroIgor
   }]
 };
 exports.default = _default;
@@ -25443,6 +25447,7 @@ var _data = _interopRequireDefault(require("../data.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
 //
 //
 //
@@ -25707,9 +25712,9 @@ exports.default = _default;
     ),
     _vm._v(" "),
     _c("div", { staticClass: "section__6" }, [
-      _c("h3", [_vm._v("Section 3")]),
-      _vm._v(" "),
-      _c("p", [_vm._v("bonjour")]),
+      _c("video", { staticClass: "video", attrs: { autoplay: "", loop: "" } }, [
+        _c("source", { attrs: { src: _vm.step.video__2 } })
+      ]),
       _vm._v(" "),
       _c(
         "div",
@@ -25868,7 +25873,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63642" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63937" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
