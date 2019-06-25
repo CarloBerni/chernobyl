@@ -9,9 +9,7 @@
         <p class="big__texte" v-if="$route.params.id">{{step.texte__3}}</p>
       </div>
     </div>
-    <div class="section__2" v-bind:style="{ video: 'url(' + step.video__1 + ')' }">
-      
-    </div>
+    <div class="section__2" v-bind:style="{ video: 'url(' + step.video__1 + ')' }"></div>
     <div class="section__3" v-bind:style="{ backgroundImage: 'url(' + step.background__2 + ')' }">
       <div class="container__text">
         <h1 class="texte__title__right" v-if="$route.params.id">{{step.sentence__1}}</h1>
@@ -23,8 +21,24 @@
         <p v-if="$route.params.id">{{step.sentence__5}}</p>
       </div>
     </div>
-    <div class="section__4" v-bind:style="{ video: 'url(' + step.video__1 + ')' }">
-      <h3>Slide 2</h3>
+    <div class="section__4" v-bind:style="{ backgroundImage: 'url(' + step.background__slider + ')' }">
+      <carousel-3d style="margin-top: 60px;"   :width="1300" :height="850">
+        <slide :index="0">
+          <img class="image__slider" v-bind:src="step.image__slider">
+        </slide>
+        <slide :index="1">
+          <img class="image__slider" v-bind:src="step.image__slider__2">
+        </slide>
+        <slide :index="2">
+          <img class="image__slider" v-bind:src="step.image__slider__3">
+        </slide>
+        <slide :index="3">
+          <img class="image__slider" v-bind:src="step.image__slider__4">
+        </slide>
+        <slide :index="4">
+          <img class="image__slider" v-bind:src="step.image__slider__5">
+        </slide>
+      </carousel-3d>
     </div>
     <div class="section__5" v-bind:style="{ backgroundImage: 'url(' + step.background__3 + ')' }">
       <div class="container__text">
@@ -75,6 +89,7 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+
   h3 {
     font-size: 2em;
     text-align: center;
@@ -153,6 +168,10 @@ export default {
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
+    .image__slider {
+      height: 100%;
+      width: 100%;
+    }
   }
   .section__5 {
     height: 100vh;
@@ -188,6 +207,14 @@ export default {
         margin: 20px;
       }
     }
+  }
+}
+
+
+.carousel-3d-container {
+  .carousel-3d-slide {
+    padding: 10px;
+    
   }
 }
 </style>

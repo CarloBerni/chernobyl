@@ -160,6 +160,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.big-container .section__4 .image__slider[data-v-77c20f] {
+  height: 100%;
+  width: 100%;
+}
 .big-container .section__5[data-v-77c20f] {
   height: 100vh;
   width: 100vw;
@@ -194,6 +198,9 @@
 }
 .big-container .section__6 .buttons .button[data-v-77c20f] {
   margin: 20px;
+}
+.carousel-3d-container .carousel-3d-slide[data-v-77c20f] {
+  padding: 10px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
