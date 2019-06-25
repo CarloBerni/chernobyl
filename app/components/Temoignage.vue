@@ -1,164 +1,194 @@
 <template>
-  <div id="app">
-    <full-page :options="options" id="fullpage" ref="fullpage">
-      <div class="section">
-        <h3>{{carlo}}</h3>
+  <div class="big-container">
+    <div class="section__1" v-bind:style="{ backgroundImage: 'url(' + step.background__1 + ')' }">
+      <div class="container__text">
+        <h1 class="texte__title__left" v-if="$route.params.id">{{step.title}}</h1>
+        <p v-if="$route.params.id">{{step.profession}}</p>
+        <p class="big__texte" v-if="$route.params.id">{{step.texte__1}}</p>
+        <p class="big__texte" v-if="$route.params.id">{{step.texte__2}}</p>
+        <p class="big__texte" v-if="$route.params.id">{{step.texte__3}}</p>
       </div>
-      <div class="section">
-        <div class="slide">
-          <h3>Slide 2.1</h3>
-        </div>
-        <div class="slide">
-          <h3>Slide 2.2</h3>
-        </div>
-        <div class="slide">
-          <h3>Slide 2.3</h3>
-        </div>
+    </div>
+    <div class="section__2" v-bind:style="{ video: 'url(' + step.video__1 + ')' }">
+      
+    </div>
+    <div class="section__3" v-bind:style="{ backgroundImage: 'url(' + step.background__2 + ')' }">
+      <div class="container__text">
+        <h1 class="texte__title__right" v-if="$route.params.id">{{step.sentence__1}}</h1>
+        <p v-if="$route.params.id">{{step.sentence__2}}</p>
+        <p v-if="$route.params.id">
+          <span>{{step.sentence__3}}</span>
+          {{step.sentence__4}}
+        </p>
+        <p v-if="$route.params.id">{{step.sentence__5}}</p>
       </div>
-      <div class="section">
-        <h3>Section 3</h3>
-        <router-link class="button" to="/timeline">suivant</router-link>
+    </div>
+    <div class="section__4" v-bind:style="{ video: 'url(' + step.video__1 + ')' }">
+      <h3>Slide 2</h3>
+    </div>
+    <div class="section__5" v-bind:style="{ backgroundImage: 'url(' + step.background__3 + ')' }">
+      <div class="container__text">
+        <p class="big__texte" v-if="$route.params.id">{{step.sentence__6}}</p>
+        <p class="big__texte" v-if="$route.params.id">{{step.sentence__7}}</p>
       </div>
-    </full-page>
+    </div>
+    <div class="section__6">
+      <h3>Section 3</h3>
+      <p>bonjour</p>
+      <div class="buttons">
+        <router-link class="button" to="/map">Map</router-link>
+        <router-link class="button" to="/map">Map</router-link>
+        <router-link class="button" to="/map">Map</router-link>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import axios from "axios";
-import VueFullPage from "vue-fullpage.js";
+import game from "../data.json";
 
 export default {
   data() {
     return {
-      carlo: "null",
-      loading: true,
-      errored: false,
-      options: {
-        afterLoad: this.afterLoad,
-        navigation: true,
-        anchors: ["page1", "page2", "page3"],
-        sectionsColor: [
-          "#41b883",
-          "#ff5f45",
-          "#0798ec",
-          "#fec401",
-          "#1bcee6",
-          "#ee1a59",
-          "#2c3e4f",
-          "#ba5be9",
-          "#b4b8ab"
-        ]
-      }
+      step: this.getStep()
     };
   },
-  methods: {
-    afterLoad: function(origin, destination, direction) {
-      console.log("After load....");
-      console.log(destination);
-    },
-    afterLoad() {
-      console.log("Emitted 'after load' event.");
-    },
-
-    addSection: function(e) {
-      var newSectionNumber =
-        document.querySelectorAll(".fp-section").length + 1;
-
-      // creating the section div
-      var section = document.createElement("div");
-      section.className = "section";
-      section.innerHTML = `<h3>Section ${newSectionNumber}</h3>`;
-
-      // adding section
-      document.querySelector("#fullpage").appendChild(section);
-
-      // creating the section menu element
-
-
-      // adding anchor for the section
-      this.options.anchors.push(`page${newSectionNumber}`);
-
-      // we have to call `update` manually as DOM changes won't fire updates
-      // requires the use of the attribute ref="fullpage" on the
-      // component element, in this case, <full-page>
-      // ideally, use an ID element for that element too
-      this.$refs.fullpage.build();
-    },
-
-    removeSection: function() {
-      var sections = document
-        .querySelector("#fullpage")
-        .querySelectorAll(".fp-section");
-      var lastSection = sections[sections.length - 1];
-
-      // removing the last section
-      lastSection.parentNode.removeChild(lastSection);
-
-      // removing the last anchor
-      this.options.anchors.pop();
-
-      // removing the last item on the sections menu
-      var sectionsMenuItems = document.querySelectorAll("#menu li");
-      var lastItem = sectionsMenuItems[sectionsMenuItems.length - 1];
-      lastItem.parentNode.removeChild(lastItem);
+  watch: {
+    "$route.params.id"(to, from) {
+      this.step = this.getStep();
     }
   },
-  mounted() {
-    axios
-      .get("https://api.coindesk.com/v1/bpi/currentprice.json")
-      .then(response => (this.carlo = response.data.bpi))
-      .catch(error => console.log(error));
+  methods: {
+    getStep() {
+      return game.steps.find(step => {
+        return step.id === parseInt(this.$route.params.id, 10);
+      });
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.section {
-  position: relative;
-  text-align: center;
-}
-#section-1 h2 {
-  color: #fff;
-  font-size: 10em;
-  font-weight: 900;
-}
-#section-1 h1 {
-  font-size: 2em;
-  font-weight: 100;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  margin: 1.5em auto 1em auto;
-  color: #35495e;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-#section-1 li {
-  display: inline-block;
-  margin: 1.25em 0.3em;
-}
-.section-1-button {
-  padding: 0.93em 1.87em;
-  background: #35495e;
-  border-radius: 5px;
-  display: block;
-  color: #fff;
-}
-h3 {
-  font-size: 5em;
-  text-align: center;
-  color: #fff;
-  font-weight: bold;
-}
-#logo {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  color: #fff;
-  font-weight: bold;
-  z-index: 99;
-  font-size: 1.9em;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
+.big-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  h3 {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+  }
+  .section__1 {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container__text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 150px;
+      margin-top: 100px;
+      margin-right: 780px;
+      .texte__title__left {
+        color: #a50104;
+        font-size: 64px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        margin: 20px;
+      }
+      p {
+        margin: 20px;
+        color: white;
+        font-size: 30px;
+        letter-spacing: 0.05em;
+        font-weight: bold;
+      }
+      .big__texte {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }
+  .section__2 {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .section__3 {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container__text {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-right: 75px;
+      margin-top: 90px;
+      margin-left: 780px;
+      .texte__title__right {
+        color: #a50104;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        margin: 30px;
+      }
+      p {
+        margin: 30px;
+        color: white;
+        font-size: 24px;
+        letter-spacing: 0.05em;
+        span {
+          font-weight: bold;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  .section__4 {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .section__5 {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container__text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 150px;
+      margin-top: 180px;
+      margin-right: 790px;
+      .big__texte {
+        color: white;
+        letter-spacing: 0.05em;
+        margin: 20px;
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }
+  .section__6 {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .button {
+        margin: 20px;
+      }
+    }
+  }
 }
 </style>
 

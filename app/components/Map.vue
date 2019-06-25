@@ -17,3 +17,17 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.big-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+</style>
+

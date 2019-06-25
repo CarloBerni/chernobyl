@@ -8,6 +8,10 @@
   font-family: "ProductSansRegular";
   src: url("../font/ProductSansRegular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Typingrad";
+  src: url("../font/Typingrad.otf") format("opentype");
+}
 
 body,
 button,
@@ -17,26 +21,19 @@ textarea {
   font-family: "ProductSansRegular";
 }
 
-.big-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
+
 
 .button {
   margin-top: 5%;
   text-decoration: none;
-  background: linear-gradient(173.13deg, #720103 0%, #590004 83.33%);
+  background: #000000;
+  color: #BDBDBD;
   padding: 20px;
   display: inline-block;
-  font-size: 1.6em;
+  font-size: 18px;
   cursor: pointer;
-  color: white;
   &:hover {
-    background: white;
-    color: #720103;
+    background: #720103;
+    color: white;
   }
 }
