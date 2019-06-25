@@ -1,7 +1,9 @@
 <template>
   <div class="big-container">
     <div class="container__button">
-      <h1>Tchernobyl</h1>
+      <video class="video" autoplay loop>
+        <source src="../assets/images/Intro.mp4">
+      </video>
       <router-link class="button" to="/intro">Commencer</router-link>
     </div>
   </div>
@@ -17,32 +19,17 @@ export default {
 
 <style lang="scss" scoped>
 .big-container {
-  background: url("../assets/images/Pripyat__bg-min.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  img {
-    height: 20%;
-    width: 90%;
+  video {
+    width: 100%;
+    height: 100%;
   }
 }
-.container__button {
-  text-align: center;
-  h1 {
-    text-transform: uppercase;
-    color: #A50104;
-    font-weight: 900;
-    font-size: 10em;
-    opacity: 0.8;
-    letter-spacing: 20px;
-    font-family: "Typingrad";
 
-  }
-}
 </style>
 

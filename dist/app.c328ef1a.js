@@ -14715,6 +14715,8 @@ if (inBrowser && window.Vue) {
 
 var _default = VueRouter;
 exports.default = _default;
+},{}],"assets/images/Intro.mp4":[function(require,module,exports) {
+module.exports = "/Intro.ce954824.mp4";
 },{}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
@@ -15071,6 +15073,8 @@ exports.default = void 0;
 //
 //
 //
+//
+//
 var _default = {
   data: function data() {
     return {};
@@ -15094,7 +15098,7 @@ exports.default = _default;
       "div",
       { staticClass: "container__button" },
       [
-        _c("h1", [_vm._v("Tchernobyl")]),
+        _vm._m(0),
         _vm._v(" "),
         _c("router-link", { staticClass: "button", attrs: { to: "/intro" } }, [
           _vm._v("Commencer")
@@ -15104,7 +15108,22 @@ exports.default = _default;
     )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "video",
+      { staticClass: "video", attrs: { autoplay: "", loop: "" } },
+      [
+        _c("source", {
+          attrs: { src: "/Intro.ce954824.mp4" }
+        })
+      ]
+    )
+  }
+]
 render._withStripped = true
 
           return {
@@ -15137,7 +15156,7 @@ render._withStripped = true
       
       }
     })();
-},{"./../assets/images/Pripyat__bg-min.png":[["Pripyat__bg-min.674789ce.png","assets/images/Pripyat__bg-min.png"],"assets/images/Pripyat__bg-min.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Intro.vue":[function(require,module,exports) {
+},{"./../assets/images/Intro.mp4":[["Intro.ce954824.mp4","assets/images/Intro.mp4"],"assets/images/Intro.mp4"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Intro.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25393,10 +25412,11 @@ module.exports = "/igor.1b54c3dc.mp4";
 module.exports = "/outroIgor.fe28a8be.mp4";
 },{}],"assets/images/*.mp4":[function(require,module,exports) {
 module.exports = {
+  "Intro": require("./Intro.mp4"),
   "igor": require("./igor.mp4"),
   "outroIgor": require("./outroIgor.mp4")
 };
-},{"./igor.mp4":"assets/images/igor.mp4","./outroIgor.mp4":"assets/images/outroIgor.mp4"}],"data.js":[function(require,module,exports) {
+},{"./Intro.mp4":"assets/images/Intro.mp4","./igor.mp4":"assets/images/igor.mp4","./outroIgor.mp4":"assets/images/outroIgor.mp4"}],"data.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25873,7 +25893,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63937" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64377" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
