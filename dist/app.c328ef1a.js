@@ -15081,14 +15081,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $ca6720 = exports.default || module.exports;
+        var $ec7312 = exports.default || module.exports;
       
-      if (typeof $ca6720 === 'function') {
-        $ca6720 = $ca6720.options;
+      if (typeof $ec7312 === 'function') {
+        $ec7312 = $ec7312.options;
       }
     
         /* template */
-        Object.assign($ca6720, (function () {
+        Object.assign($ec7312, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -15130,7 +15130,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-ca6720",
+            _scopeId: "data-v-ec7312",
             functional: undefined
           };
         })());
@@ -15143,9 +15143,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$ca6720', $ca6720);
+            api.createRecord('$ec7312', $ec7312);
           } else {
-            api.reload('$ca6720', $ca6720);
+            api.reload('$ec7312', $ec7312);
           }
         }
 
@@ -15188,14 +15188,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $0c4d4b = exports.default || module.exports;
+        var $0f2a57 = exports.default || module.exports;
       
-      if (typeof $0c4d4b === 'function') {
-        $0c4d4b = $0c4d4b.options;
+      if (typeof $0f2a57 === 'function') {
+        $0f2a57 = $0f2a57.options;
       }
     
         /* template */
-        Object.assign($0c4d4b, (function () {
+        Object.assign($0f2a57, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -15278,7 +15278,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-0c4d4b",
+            _scopeId: "data-v-0f2a57",
             functional: undefined
           };
         })());
@@ -15291,9 +15291,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$0c4d4b', $0c4d4b);
+            api.createRecord('$0f2a57', $0f2a57);
           } else {
-            api.reload('$0c4d4b', $0c4d4b);
+            api.reload('$0f2a57', $0f2a57);
           }
         }
 
@@ -15311,11 +15311,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-//
-//
-//
-//
-//
 //
 //
 //
@@ -17510,7 +17505,7 @@ var _default = {
       var tatiana = document.querySelector('.tatiana');
       var routerTatiana = document.querySelector('.router_tatiana');
       var liquidateur = document.querySelector('.liquidateur');
-      var routerLiquidateur = document.querySelector('.router_yuri');
+      var routerLiquidateur = document.querySelector('.router_liquidateur');
 
       if (yuri.style.opacity == 0) {
         yuri.style.opacity = '1';
@@ -17518,7 +17513,7 @@ var _default = {
         routerYuri.style.position = 'absolute';
         routerYuri.style.right = '27px';
         routerYuri.style.bottom = '21px';
-        routerYuri.style.zIndex = '2';
+        routerYuri.style.zIndex = '10';
         kostin.style.opacity = '0';
         routerKostin.style.display = 'none';
         tatiana.style.opacity = '0';
@@ -17587,14 +17582,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $d58708 = exports.default || module.exports;
+        var $05c120 = exports.default || module.exports;
       
-      if (typeof $d58708 === 'function') {
-        $d58708 = $d58708.options;
+      if (typeof $05c120 === 'function') {
+        $05c120 = $05c120.options;
       }
     
         /* template */
-        Object.assign($d58708, (function () {
+        Object.assign($05c120, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -18388,14 +18383,14 @@ exports.default = _default;
               }),
               _vm._v(" "),
               _c("path", {
-                staticClass: "block1",
+                staticClass: "block1 unuse-block",
                 attrs: {
                   "fill-rule": "evenodd",
                   "clip-rule": "evenodd",
                   d:
                     "M910.562 107.204L914.571 112.906L911.186 115.28L925.297 135.36L928.674 132.993L932.618 138.602L967.056 114.397L963.12 108.789L966.454 106.444L952.336 86.3563L949.002 88.7014L945.001 83L910.562 107.204ZM919.633 109.341L939.007 95.7225L953.118 115.81L933.751 129.422L919.633 109.341Z",
-                  fill: "#090909",
-                  stroke: "#330002",
+                  fill: "#D9D0C9",
+                  stroke: "#B9A99C",
                   "stroke-width": "0.75"
                 }
               }),
@@ -18731,8 +18726,8 @@ exports.default = _default;
                   "clip-rule": "evenodd",
                   d:
                     "M1494.47 588.978L1494.5 591.101L1501.95 591.187L1504.43 591.201V589.746L1504.44 518.969H1494.6L1494.47 588.978Z",
-                  fill: "#090909",
-                  stroke: "#330002",
+                  fill: "#D9D0C9",
+                  stroke: "#B9A99C",
                   "stroke-width": "0.75"
                 }
               }),
@@ -19094,8 +19089,8 @@ exports.default = _default;
                   "clip-rule": "evenodd",
                   d:
                     "M1563.03 569.02L1563.07 578.243L1627.94 577.934L1627.9 568.719L1563.03 569.02Z",
-                  fill: "#090909",
-                  stroke: "#330002",
+                  fill: "#D9D0C9",
+                  stroke: "#B9A99C",
                   "stroke-width": "0.75"
                 }
               }),
@@ -19253,8 +19248,8 @@ exports.default = _default;
                   "clip-rule": "evenodd",
                   d:
                     "M1501.69 643.853L1510.91 643.888L1511.12 597.653L1516.12 597.682L1516.17 587.161L1506.8 587.125L1506.79 589.757L1504.4 589.743V591.198L1501.92 591.184L1501.69 643.853Z",
-                  fill: "#090909",
-                  stroke: "#330002",
+                  fill: "#D9D0C9",
+                  stroke: "#B9A99C",
                   "stroke-width": "0.75"
                 }
               }),
@@ -20298,8 +20293,8 @@ exports.default = _default;
                   "clip-rule": "evenodd",
                   d:
                     "M1514.69 515.408L1514.74 525.728L1548.83 525.563L1548.79 515.25L1514.69 515.408Z",
-                  fill: "#090909",
-                  stroke: "#330002",
+                  fill: "#D9D0C9",
+                  stroke: "#B9A99C",
                   "stroke-width": "0.75"
                 }
               }),
@@ -20495,8 +20490,8 @@ exports.default = _default;
                   "clip-rule": "evenodd",
                   d:
                     "M1471.75 581.192L1471.94 623.533L1479.82 623.49L1479.67 591.376L1479.64 589.253L1479.6 581.156L1471.75 581.192Z",
-                  fill: "#090909",
-                  stroke: "#330002",
+                  fill: "#D9D0C9",
+                  stroke: "#B9A99C",
                   "stroke-width": "0.75"
                 }
               }),
@@ -20568,8 +20563,8 @@ exports.default = _default;
                   "clip-rule": "evenodd",
                   d:
                     "M1538.66 534.098L1538.83 570.516L1547.73 570.466L1547.56 534.062L1538.66 534.098Z",
-                  fill: "#090909",
-                  stroke: "#330002",
+                  fill: "#D9D0C9",
+                  stroke: "#B9A99C",
                   "stroke-width": "0.75"
                 }
               }),
@@ -20713,8 +20708,8 @@ exports.default = _default;
                   "clip-rule": "evenodd",
                   d:
                     "M1591.91 531.254L1608.45 531.569L1608.79 513.698L1592.25 513.375L1591.91 531.254Z",
-                  fill: "#090909",
-                  stroke: "#330002",
+                  fill: "#D9D0C9",
+                  stroke: "#B9A99C",
                   "stroke-width": "0.75"
                 }
               }),
@@ -21974,8 +21969,8 @@ exports.default = _default;
                   "clip-rule": "evenodd",
                   d:
                     "M1569.72 521.206L1569.77 532.789L1578.77 532.753L1578.72 521.156L1569.72 521.206Z",
-                  fill: "#090909",
-                  stroke: "#330002",
+                  fill: "#D9D0C9",
+                  stroke: "#B9A99C",
                   "stroke-width": "0.75"
                 }
               }),
@@ -22502,8 +22497,8 @@ exports.default = _default;
                   "clip-rule": "evenodd",
                   d:
                     "M1479.62 589.289L1479.65 591.412L1494.46 591.154L1494.43 589.031L1479.62 589.289Z",
-                  fill: "#090909",
-                  stroke: "#330002",
+                  fill: "#D9D0C9",
+                  stroke: "#B9A99C",
                   "stroke-width": "0.75"
                 }
               }),
@@ -25769,7 +25764,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-d58708",
+            _scopeId: "data-v-05c120",
             functional: undefined
           };
         })());
@@ -25782,9 +25777,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$d58708', $d58708);
+            api.createRecord('$05c120', $05c120);
           } else {
-            api.reload('$d58708', $d58708);
+            api.reload('$05c120', $05c120);
           }
         }
 
@@ -26001,14 +25996,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $77c20f = exports.default || module.exports;
+        var $b72ef4 = exports.default || module.exports;
       
-      if (typeof $77c20f === 'function') {
-        $77c20f = $77c20f.options;
+      if (typeof $b72ef4 === 'function') {
+        $b72ef4 = $b72ef4.options;
       }
     
         /* template */
-        Object.assign($77c20f, (function () {
+        Object.assign($b72ef4, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -26212,7 +26207,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-77c20f",
+            _scopeId: "data-v-b72ef4",
             functional: undefined
           };
         })());
@@ -26225,9 +26220,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$77c20f', $77c20f);
+            api.createRecord('$b72ef4', $b72ef4);
           } else {
-            api.reload('$77c20f', $77c20f);
+            api.reload('$b72ef4', $b72ef4);
           }
         }
 
@@ -26354,7 +26349,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49742" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59586" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
