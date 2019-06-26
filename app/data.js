@@ -9,7 +9,7 @@ export default {
       "title": "Igor Kostine",
       "profession": "Photographe",
       "texte__1": "Surnommé << l'Homme légendaire >> par le Washington Post, Igor Kostine est un témoin capital de la catastrophe de Tchernobyl. Le 26 avril 1986, quelques heures seulement après l'explosion, il survole la centrale.",
-      "texte__2": "Surpris par l'ampleur de la catastrophe et par le silence des autorités, Igor Kostine décide de rester sur place et de vivre au milieu des 800000 << liquidateurs >> qui se succéderont sur le site de l'accident.",
+      "texte__2": "Surpris par l'ampleur de la catastrophe et par le silence des autorités, Igor Kostine décide de rester sur place et de vivre au milieu des 800 000 << liquidateurs >> qui se succéderont sur le site de l'accident.",
       "texte__3": "Lui-même irradié, il n'aura de cesse, vingt années durant, de photographier la centrale et la zone interdite qui l'entoure. Son histoire se confond avec celle de Tchernobyl. Il a vu l'évacuation des villages, le désespoir et le courage des populations, la construction du sarcophage, les hommes déplaçant à mains nues des blocs radioactifs, les cimetières de machines, les jardins et les vergers contaminés redevenus des terres sauvages où l'homme n'a plus sa place...",
       "background__2": "https://i.goopics.net/jv1my.png",
       "sentence__1": "<< Le soir, quand je développais la pellicule, je la trouvais mouchetée de tâches à cause de la radiation. >>",

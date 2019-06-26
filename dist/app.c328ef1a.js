@@ -17332,6 +17332,144 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   data: function data() {
     return {};
@@ -17339,17 +17477,111 @@ var _default = {
   methods: {
     kostin: function kostin(event) {
       var kostin = document.querySelector('.kostin');
-      var routerLink = document.querySelector('.router_link');
+      var routerKostin = document.querySelector('.router_igor');
+      var yuri = document.querySelector('.yuri');
+      var routerYuri = document.querySelector('.router_yuri');
+      var tatiana = document.querySelector('.tatiana');
+      var routerTatiana = document.querySelector('.router_tatiana');
+      var liquidateur = document.querySelector('.liquidateur');
+      var routerLiquidateur = document.querySelector('.router_yuri');
 
       if (kostin.style.opacity == 0) {
         kostin.style.opacity = '1';
-        routerLink.style.display = 'block';
-        routerLink.style.position = 'absolute';
-        routerLink.style.right = '16px';
-        routerLink.style.bottom = '21px';
+        routerKostin.style.display = 'block';
+        routerKostin.style.position = 'absolute';
+        routerKostin.style.right = '30px';
+        routerKostin.style.bottom = '21px';
+        yuri.style.opacity = '0';
+        routerYuri.style.display = 'none';
+        tatiana.style.opacity = '0';
+        routerTatiana.style.display = 'none';
+        liquidateur.style.opacity = '0';
+        routerLiquidateur.style.display = 'none';
       } else {
         kostin.style.opacity = '0';
-        routerLink.style.display = 'none';
+        routerKostin.style.display = 'none';
+      }
+    },
+    yuri: function yuri() {
+      var yuri = document.querySelector('.yuri');
+      var routerYuri = document.querySelector('.router_yuri');
+      var kostin = document.querySelector('.kostin');
+      var routerKostin = document.querySelector('.router_igor');
+      var tatiana = document.querySelector('.tatiana');
+      var routerTatiana = document.querySelector('.router_tatiana');
+      var liquidateur = document.querySelector('.liquidateur');
+      var routerLiquidateur = document.querySelector('.router_yuri');
+
+      if (yuri.style.opacity == 0) {
+        yuri.style.opacity = '1';
+        routerYuri.style.display = 'block';
+        routerYuri.style.position = 'absolute';
+        routerYuri.style.right = '27px';
+        routerYuri.style.bottom = '21px';
+        routerYuri.style.zIndex = '2';
+        kostin.style.opacity = '0';
+        routerKostin.style.display = 'none';
+        tatiana.style.opacity = '0';
+        routerTatiana.style.display = 'none';
+        liquidateur.style.opacity = '0';
+        routerLiquidateur.style.display = 'none';
+      } else {
+        yuri.style.opacity = '0';
+        routerYuri.style.display = 'none';
+      }
+    },
+    tatiana: function tatiana() {
+      var tatiana = document.querySelector('.tatiana');
+      var routerTatiana = document.querySelector('.router_tatiana');
+      var yuri = document.querySelector('.yuri');
+      var routerYuri = document.querySelector('.router_yuri');
+      var kostin = document.querySelector('.kostin');
+      var routerKostin = document.querySelector('.router_igor');
+      var liquidateur = document.querySelector('.liquidateur');
+      var routerLiquidateur = document.querySelector('.router_yuri');
+
+      if (tatiana.style.opacity == 0) {
+        tatiana.style.opacity = '1';
+        routerTatiana.style.display = 'block';
+        routerTatiana.style.position = 'absolute';
+        routerTatiana.style.right = '27px';
+        routerTatiana.style.bottom = '20px';
+        yuri.style.opacity = '0';
+        routerYuri.style.display = 'none';
+        kostin.style.opacity = '0';
+        routerKostin.style.display = 'none';
+        liquidateur.style.opacity = '0';
+        routerLiquidateur.style.display = 'none';
+      } else {
+        tatiana.style.opacity = '0';
+        routerTatiana.style.display = 'none';
+      }
+    },
+    liquidateur: function liquidateur() {
+      var liquidateur = document.querySelector('.liquidateur');
+      var routerLiquidateur = document.querySelector('.router_liquidateur');
+      var tatiana = document.querySelector('.tatiana');
+      var routerTatiana = document.querySelector('.router_tatiana');
+      var yuri = document.querySelector('.yuri');
+      var routerYuri = document.querySelector('.router_yuri');
+      var kostin = document.querySelector('.kostin');
+      var routerKostin = document.querySelector('.router_igor');
+
+      if (liquidateur.style.opacity == 0) {
+        liquidateur.style.opacity = '1';
+        routerLiquidateur.style.display = 'block';
+        routerLiquidateur.style.position = 'absolute';
+        routerLiquidateur.style.right = '29px';
+        routerLiquidateur.style.bottom = '13px';
+        yuri.style.opacity = '0';
+        routerYuri.style.display = 'none';
+        tatiana.style.opacity = '0';
+        routerTatiana.style.display = 'none';
+        kostin.style.opacity = '0';
+        routerKostin.style.display = 'none';
+      } else {
+        liquidateur.style.opacity = '0';
+        routerLiquidateur.style.display = 'none';
       }
     }
   }
@@ -18151,7 +18383,8 @@ exports.default = _default;
                   fill: "#090909",
                   stroke: "#330002",
                   "stroke-width": "0.75"
-                }
+                },
+                on: { click: _vm.yuri }
               }),
               _vm._v(" "),
               _c("path", {
@@ -18538,7 +18771,8 @@ exports.default = _default;
                   fill: "#090909",
                   stroke: "#330002",
                   "stroke-width": "0.75"
-                }
+                },
+                on: { click: _vm.tatiana }
               }),
               _vm._v(" "),
               _c("path", {
@@ -18876,7 +19110,8 @@ exports.default = _default;
                   fill: "#090909",
                   stroke: "#330002",
                   "stroke-width": "0.75"
-                }
+                },
+                on: { click: _vm.liquidateur }
               }),
               _vm._v(" "),
               _c("path", {
@@ -20079,7 +20314,8 @@ exports.default = _default;
                   fill: "#090909",
                   stroke: "#330002",
                   "stroke-width": "0.75"
-                }
+                },
+                on: { click: _vm.liquidateur }
               }),
               _vm._v(" "),
               _c("path", {
@@ -20092,7 +20328,8 @@ exports.default = _default;
                   fill: "#090909",
                   stroke: "#330002",
                   "stroke-width": "0.75"
-                }
+                },
+                on: { click: _vm.liquidateur }
               }),
               _vm._v(" "),
               _c("path", {
@@ -25341,12 +25578,164 @@ exports.default = _default;
             _vm._v(" "),
             _c(
               "router-link",
-              { staticClass: "router_link", attrs: { to: "/temoignage/1" } },
+              { staticClass: "router_igor", attrs: { to: "/temoignage/1" } },
               [
                 _c(
                   "svg",
                   {
                     staticClass: "kostin__story",
+                    attrs: {
+                      width: "16",
+                      height: "19",
+                      viewBox: "0 0 16 19",
+                      fill: "none",
+                      xmlns: "http://www.w3.org/2000/svg"
+                    }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d: "M15.75 9.09327L0 18.1865V0L15.75 9.09327Z",
+                        fill: "white"
+                      }
+                    })
+                  ]
+                )
+              ]
+            )
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "yuri" }, [
+        _c("img", {
+          staticClass: "yuri__picture",
+          attrs: {
+            src: "/chernobylworker.2ad1d57b.jpg",
+            alt: "Photo de Yuri Korneev"
+          }
+        }),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "yuri__info" },
+          [
+            _c("h3", { staticClass: "info__name" }, [_vm._v("Yuri Korneev")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "info__job job--yuri" }, [
+              _vm._v("Opérateur turbine de la centrale")
+            ]),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { staticClass: "router_yuri", attrs: { to: "/temoignage/2" } },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "yuri__story",
+                    attrs: {
+                      width: "16",
+                      height: "19",
+                      viewBox: "0 0 16 19",
+                      fill: "none",
+                      xmlns: "http://www.w3.org/2000/svg"
+                    }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d: "M15.75 9.09327L0 18.1865V0L15.75 9.09327Z",
+                        fill: "white"
+                      }
+                    })
+                  ]
+                )
+              ]
+            )
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "tatiana" }, [
+        _c("img", {
+          staticClass: "tatiana__picture",
+          attrs: {
+            src: "/fille_pripyat.7634132a.png",
+            alt: "Petite fille dans Prypiat"
+          }
+        }),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "tatiana__info" },
+          [
+            _c("h3", { staticClass: "info__name" }, [_vm._v("Tatiana")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "info__job job--tatiana" }, [
+              _vm._v("Petite fille de Prypiat")
+            ]),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { staticClass: "router_tatiana", attrs: { to: "/temoignage/4" } },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "tatiana__story",
+                    attrs: {
+                      width: "16",
+                      height: "19",
+                      viewBox: "0 0 16 19",
+                      fill: "none",
+                      xmlns: "http://www.w3.org/2000/svg"
+                    }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d: "M15.75 9.09327L0 18.1865V0L15.75 9.09327Z",
+                        fill: "white"
+                      }
+                    })
+                  ]
+                )
+              ]
+            )
+          ],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "liquidateur" }, [
+        _c("img", {
+          staticClass: "liquidateur__picture",
+          attrs: {
+            src: "/liquidateur.8ecb220c.png",
+            alt: "Photo de liquidateurs"
+          }
+        }),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "liquidateur__info" },
+          [
+            _c("h3", { staticClass: "info__name" }, [_vm._v("Liquidateur")]),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              {
+                staticClass: "router_liquidateur",
+                attrs: { to: "/temoignage/3" }
+              },
+              [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "liquidateur__story",
                     attrs: {
                       width: "16",
                       height: "19",
@@ -25406,7 +25795,7 @@ render._withStripped = true
       
       }
     })();
-},{"./../assets/images/Igor__Kostin.jpg":[["Igor__Kostin.0b70b8c7.jpg","assets/images/Igor__Kostin.jpg"],"assets/images/Igor__Kostin.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"assets/images/igor.mp4":[function(require,module,exports) {
+},{"./../assets/images/Igor__Kostin.jpg":[["Igor__Kostin.0b70b8c7.jpg","assets/images/Igor__Kostin.jpg"],"assets/images/Igor__Kostin.jpg"],"./../assets/images/chernobylworker.jpg":[["chernobylworker.2ad1d57b.jpg","assets/images/chernobylworker.jpg"],"assets/images/chernobylworker.jpg"],"./../assets/images/fille_pripyat.png":[["fille_pripyat.7634132a.png","assets/images/fille_pripyat.png"],"assets/images/fille_pripyat.png"],"./../assets/images/liquidateur.png":[["liquidateur.8ecb220c.png","assets/images/liquidateur.png"],"assets/images/liquidateur.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"assets/images/igor.mp4":[function(require,module,exports) {
 module.exports = "/igor.1b54c3dc.mp4";
 },{}],"assets/images/outroIgor.mp4":[function(require,module,exports) {
 module.exports = "/outroIgor.fe28a8be.mp4";
@@ -25433,7 +25822,7 @@ var _default = {
     "title": "Igor Kostine",
     "profession": "Photographe",
     "texte__1": "Surnommé << l'Homme légendaire >> par le Washington Post, Igor Kostine est un témoin capital de la catastrophe de Tchernobyl. Le 26 avril 1986, quelques heures seulement après l'explosion, il survole la centrale.",
-    "texte__2": "Surpris par l'ampleur de la catastrophe et par le silence des autorités, Igor Kostine décide de rester sur place et de vivre au milieu des 800000 << liquidateurs >> qui se succéderont sur le site de l'accident.",
+    "texte__2": "Surpris par l'ampleur de la catastrophe et par le silence des autorités, Igor Kostine décide de rester sur place et de vivre au milieu des 800 000 << liquidateurs >> qui se succéderont sur le site de l'accident.",
     "texte__3": "Lui-même irradié, il n'aura de cesse, vingt années durant, de photographier la centrale et la zone interdite qui l'entoure. Son histoire se confond avec celle de Tchernobyl. Il a vu l'évacuation des villages, le désespoir et le courage des populations, la construction du sarcophage, les hommes déplaçant à mains nues des blocs radioactifs, les cimetières de machines, les jardins et les vergers contaminés redevenus des terres sauvages où l'homme n'a plus sa place...",
     "background__2": "https://i.goopics.net/jv1my.png",
     "sentence__1": "<< Le soir, quand je développais la pellicule, je la trouvais mouchetée de tâches à cause de la radiation. >>",
@@ -25616,7 +26005,7 @@ exports.default = _default;
       [
         _c("div", { staticClass: "container__text" }, [
           _vm.$route.params.id
-            ? _c("h1", { staticClass: "texte__title__left" }, [
+            ? _c("h1", { staticClass: "texte__title__left lines" }, [
                 _vm._v(_vm._s(_vm.step.title))
               ])
             : _vm._e(),
@@ -25626,19 +26015,19 @@ exports.default = _default;
             : _vm._e(),
           _vm._v(" "),
           _vm.$route.params.id
-            ? _c("p", { staticClass: "big__texte" }, [
+            ? _c("p", { staticClass: "big__texte lines" }, [
                 _vm._v(_vm._s(_vm.step.texte__1))
               ])
             : _vm._e(),
           _vm._v(" "),
           _vm.$route.params.id
-            ? _c("p", { staticClass: "big__texte" }, [
+            ? _c("p", { staticClass: "big__texte lines" }, [
                 _vm._v(_vm._s(_vm.step.texte__2))
               ])
             : _vm._e(),
           _vm._v(" "),
           _vm.$route.params.id
-            ? _c("p", { staticClass: "big__texte" }, [
+            ? _c("p", { staticClass: "big__texte lines" }, [
                 _vm._v(_vm._s(_vm.step.texte__3))
               ])
             : _vm._e()
@@ -25667,24 +26056,28 @@ exports.default = _default;
       [
         _c("div", { staticClass: "container__text" }, [
           _vm.$route.params.id
-            ? _c("h1", { staticClass: "texte__title__right" }, [
+            ? _c("h1", { staticClass: "texte__title__right lines" }, [
                 _vm._v(_vm._s(_vm.step.sentence__1))
               ])
             : _vm._e(),
           _vm._v(" "),
           _vm.$route.params.id
-            ? _c("p", [_vm._v(_vm._s(_vm.step.sentence__2))])
+            ? _c("p", { staticClass: "lines" }, [
+                _vm._v(_vm._s(_vm.step.sentence__2))
+              ])
             : _vm._e(),
           _vm._v(" "),
           _vm.$route.params.id
-            ? _c("p", [
+            ? _c("p", { staticClass: "lines" }, [
                 _c("span", [_vm._v(_vm._s(_vm.step.sentence__3))]),
                 _vm._v("\n        " + _vm._s(_vm.step.sentence__4) + "\n      ")
               ])
             : _vm._e(),
           _vm._v(" "),
           _vm.$route.params.id
-            ? _c("p", [_vm._v(_vm._s(_vm.step.sentence__5))])
+            ? _c("p", { staticClass: "lines" }, [
+                _vm._v(_vm._s(_vm.step.sentence__5))
+              ])
             : _vm._e()
         ])
       ]
@@ -25754,13 +26147,13 @@ exports.default = _default;
       [
         _c("div", { staticClass: "container__text" }, [
           _vm.$route.params.id
-            ? _c("p", { staticClass: "big__texte" }, [
+            ? _c("p", { staticClass: "big__texte lines" }, [
                 _vm._v(_vm._s(_vm.step.sentence__6))
               ])
             : _vm._e(),
           _vm._v(" "),
           _vm.$route.params.id
-            ? _c("p", { staticClass: "big__texte" }, [
+            ? _c("p", { staticClass: "big__texte lines" }, [
                 _vm._v(_vm._s(_vm.step.sentence__7))
               ])
             : _vm._e()
@@ -25902,6 +26295,19 @@ _vue.default.use(_vueCarousel3d.default);
 new _vue.default({
   router: _router.default
 }).$mount('#root');
+var tl = new TimelineLite();
+var lines = $('.lines');
+
+for (var i = 0; i < 10; i++) {
+  var fromY = i % 1 == 0 ? +50 : 50;
+  tl.from(lines[i], 1, {
+    y: fromY,
+    autoAlpha: 0,
+    ease: Power3.easeOut
+  }, i * 1);
+}
+
+;
 },{"vue":"../node_modules/vue/dist/vue.common.js","vue-carousel-3d":"../node_modules/vue-carousel-3d/dist/vue-carousel-3d.min.js","./router":"router.js","./assets/scss/styles.scss":"assets/scss/styles.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -25930,7 +26336,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52212" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49476" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

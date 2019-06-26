@@ -192,7 +192,7 @@
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M726.906 1095.21L770.917 1122.45L784.081 1101.18L740.071 1073.94L726.906 1095.21Z" fill="#D9D0C9"
               stroke="#B9A99C" stroke-width="0.75" />
-            <path class="block1" fill-rule="evenodd" clip-rule="evenodd"
+            <path class="block1" v-on:click="yuri" fill-rule="evenodd" clip-rule="evenodd"
               d="M585.219 638.444L587.8 642.195L589.306 641.169L594.82 649.209L598.175 646.892L597.207 645.472L604.306 640.588L606.822 644.253L658.67 608.61L655.221 603.604L659.229 600.843L658.555 599.868L663.574 596.418L663.94 596.963L671.956 591.455L671.454 590.71L676.474 587.267L677.054 588.099L680.869 585.482L683.701 589.598L684.547 589.017L688.182 594.295L687.788 594.575L693.029 602.199L693.625 601.797L697.418 607.319L696.701 607.807L698.916 611.034L706.38 605.906L688.57 580.002L680.998 585.202L675.936 577.844L649.729 595.845L653.056 600.685L648.947 603.504L649.765 604.694L644.71 608.158L644.251 607.498L636.572 612.777L637.174 613.666L632.119 617.144L631.646 616.456L623.794 621.849L624.397 622.731L619.399 626.173L618.926 625.478L610.852 631.036L611.433 631.889L606.493 635.296L605.783 634.263L600.405 637.942L594.884 629.903L591.242 632.405L592.124 633.696L585.219 638.444Z"
               fill="#090909" stroke="#330002" stroke-width="0.75" />
             <path class="block1" fill-rule="evenodd" clip-rule="evenodd"
@@ -288,7 +288,7 @@
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M394.406 458.324L409.155 479.552L414.748 475.665L407.549 465.302L419.954 456.674L426.55 466.155L431.82 462.505L424.765 452.357L436.854 443.959L444.698 455.24L451.76 450.327L436.502 428.375L430.071 432.85L434.107 438.652L403.383 460.009L399.669 454.659L394.406 458.324Z"
               fill="#D9D0C9" stroke="#B9A99C" stroke-width="0.75" />
-            <path class="block1" fill-rule="evenodd" clip-rule="evenodd"
+            <path class="block1" v-on:click="tatiana" fill-rule="evenodd" clip-rule="evenodd"
               d="M652.781 292.542L666.613 313.397L691.249 297.088L682.028 283.147L678.35 285.585L673.883 278.844L652.781 292.542Z"
               fill="#090909" stroke="#330002" stroke-width="0.75" />
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -372,7 +372,7 @@
             <path class="block1" fill-rule="evenodd" clip-rule="evenodd"
               d="M1563.03 569.02L1563.07 578.243L1627.94 577.934L1627.9 568.719L1563.03 569.02Z" fill="#090909"
               stroke="#330002" stroke-width="0.75" />
-            <path class="block1" fill-rule="evenodd" clip-rule="evenodd"
+            <path class="block1" v-on:click="liquidateur" fill-rule="evenodd" clip-rule="evenodd"
               d="M1396.53 908.525L1405.04 908.554L1405.21 838.803L1396.71 838.781L1396.53 908.525Z" fill="#090909"
               stroke="#330002" stroke-width="0.75" />
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -672,10 +672,10 @@
             <path class="block1" fill-rule="evenodd" clip-rule="evenodd"
               d="M1514.69 515.408L1514.74 525.728L1548.83 525.563L1548.79 515.25L1514.69 515.408Z" fill="#090909"
               stroke="#330002" stroke-width="0.75" />
-            <path class="block1" fill-rule="evenodd" clip-rule="evenodd"
+            <path class="block1" v-on:click="liquidateur" fill-rule="evenodd" clip-rule="evenodd"
               d="M1354.31 949.182L1358.28 954.948L1399.46 926.648L1395.5 920.875L1354.31 949.182Z" fill="#090909"
               stroke="#330002" stroke-width="0.75" />
-            <path class="block1" fill-rule="evenodd" clip-rule="evenodd"
+            <path class="block1" v-on:click="liquidateur" fill-rule="evenodd" clip-rule="evenodd"
               d="M1400.38 824.665L1405.75 832.489L1436.13 811.598L1430.77 803.781L1400.38 824.665Z" fill="#090909"
               stroke="#330002" stroke-width="0.75" />
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1890,20 +1890,56 @@
         <div class="kostin__info">
           <h3 class="info__name">Igor Kostin</h3>
           <span class="info__job">Photographe</span>
-          <router-link class="router_link" to="/temoignage/1">
+          <router-link class="router_igor" to="/temoignage/1">
             <svg class="kostin__story" width="16" height="19" viewBox="0 0 16 19" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M15.75 9.09327L0 18.1865V0L15.75 9.09327Z" fill="white" /></svg>
           </router-link>
         </div>
       </div>
+      <div class="yuri">
+        <img class="yuri__picture" src="../assets/images/chernobylworker.jpg" alt="Photo de Yuri Korneev">
+        <div class="yuri__info">
+          <h3 class="info__name">Yuri Korneev</h3>
+          <span class="info__job job--yuri">Opérateur turbine de la centrale</span>
+          <router-link class="router_yuri" to="/temoignage/2">
+            <svg class="yuri__story" width="16" height="19" viewBox="0 0 16 19" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.75 9.09327L0 18.1865V0L15.75 9.09327Z" fill="white" /></svg>
+          </router-link>
+        </div>
+      </div>
+      <div class="tatiana">
+        <img class="tatiana__picture" src="../assets/images/fille_pripyat.png" alt="Petite fille dans Prypiat">
+        <div class="tatiana__info">
+          <h3 class="info__name">Tatiana</h3>
+          <span class="info__job job--tatiana">Petite fille de Prypiat</span>
+          <router-link class="router_tatiana" to="/temoignage/4">
+            <svg class="tatiana__story" width="16" height="19" viewBox="0 0 16 19" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.75 9.09327L0 18.1865V0L15.75 9.09327Z" fill="white" /></svg>
+          </router-link>
+        </div>
+      </div>
+      <div class="liquidateur">
+        <img class="liquidateur__picture" src="../assets/images/liquidateur.png" alt="Photo de liquidateurs">
+        <div class="liquidateur__info">
+          <h3 class="info__name">Liquidateur</h3>
+          <router-link class="router_liquidateur" to="/temoignage/3">
+            <svg class="liquidateur__story" width="16" height="19" viewBox="0 0 16 19" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.75 9.09327L0 18.1865V0L15.75 9.09327Z" fill="white" /></svg>
+          </router-link>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <style lang="scss" scoped>
   .maps {
     border: 1px solid purple;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     stroke: white;
     fill: white;
@@ -1977,18 +2013,14 @@
 
   .kostin {
     opacity: 0;
-    height: 14.946rem;
     position: absolute;
     background-color: #660003;
     color: white;
     border-radius: 0.3125rem;
     overflow: hidden;
     left: 7vw;
-    top: 45vh;
-  }
-
-  .kostin--open {
-    opacity: 1;
+    top: 34vh;
+    width: 15.3vw;
   }
 
   .info__name {
@@ -2004,18 +2036,124 @@
   }
 
   .kostin__picture {
-    height: 10.5rem;
-    width: 10rem;
+    width: 15.3rem;
+  }
+
+  .kostin__info {
+    height: 3.3rem;
   }
 
   .kostin__story {
     margin-left: 23px;
   }
 
-  .router_link { 
+  .router_igor { 
     display: none;
   }
 
+  .yuri {
+    opacity: 0;
+    position: absolute;
+    background-color: #660003;
+    color: white;
+    border-radius: 0.3125rem;
+    overflow: hidden;
+    left: 40vw;
+    top: 45vh;
+    width: 22vw;
+  }
+
+  .yuri__picture {
+    width: 22rem;
+  }
+  
+  .yuri__info {
+    height: 3.3rem;
+  }
+
+  .job--yuri {
+    margin-bottom: 2px;
+  }
+
+  .yuri__story {
+    margin-left: 23px;
+  }
+
+  .router_yuri { 
+    display: none;
+  }
+
+  .tatiana {
+    opacity: 0;
+    position: absolute;
+    background-color: #660003;
+    color: white;
+    border-radius: 0.3125rem;
+    overflow: hidden;
+    left: 40vw;
+    top: 5vh;
+    width: 17vw;
+  }
+
+  .tatiana__picture {
+    width: 17rem;
+  }
+
+  .tatiana__info {
+    height: 3.3rem;
+  }
+
+  .job--tatiana {
+    margin-bottom: 2px;
+  }
+
+  .tatiana__story {
+    margin-left: 23px;
+  }
+
+  .router_tatiana { 
+    display: none;
+  }
+
+
+  .liquidateur {
+    opacity: 0;
+    position: absolute;
+    background-color: #660003;
+    color: white;
+    border-radius: 0.3125rem;
+    overflow: hidden;
+    left: 50vw;
+    top: 55vh;
+    width: 17vw;
+  }
+
+  .liquidateur__picture {
+    width: 17rem;
+  }
+
+  .liquidateur__info {
+    height: 2rem;
+  }
+
+  .job--liquidateur {
+    margin-bottom: 2px;
+  }
+
+  .liquidateur__story {
+    margin-left: 23px;
+  }
+
+  .router_liquidateur { 
+    display: none;
+  }
+
+  .Calque_1{
+    fill: #b2b2b2;
+    opacity: 0.5;
+    position: absolute;
+    width: 20px;
+  }
 </style>
 
 
@@ -2029,19 +2167,141 @@
     methods: {
       kostin: function(event) {
         let kostin = document.querySelector('.kostin');
-        let routerLink = document.querySelector('.router_link');
+        let routerKostin = document.querySelector('.router_igor');
+
+        let yuri = document.querySelector('.yuri');
+        let routerYuri = document.querySelector('.router_yuri');
+
+        let tatiana = document.querySelector('.tatiana');
+        let routerTatiana = document.querySelector('.router_tatiana');
+
+        let liquidateur = document.querySelector('.liquidateur');
+        let routerLiquidateur = document.querySelector('.router_yuri');
+
         if(kostin.style.opacity == 0) {
           kostin.style.opacity = '1'
-          routerLink.style.display = 'block';
-          routerLink.style.position = 'absolute';
-          routerLink.style.right = '16px';
-          routerLink.style.bottom = '21px';
+          routerKostin.style.display = 'block';
+          routerKostin.style.position = 'absolute';
+          routerKostin.style.right = '30px';
+          routerKostin.style.bottom = '21px';
+
+          yuri.style.opacity = '0';
+          routerYuri.style.display = 'none';
+
+          tatiana.style.opacity = '0';
+          routerTatiana.style.display = 'none';
+
+          liquidateur.style.opacity = '0';
+          routerLiquidateur.style.display = 'none';
 
         } else {
           kostin.style.opacity = '0';
-          routerLink.style.display = 'none';
+          routerKostin.style.display = 'none';
         }
-      }
+      },
+      yuri: function() {
+        let yuri = document.querySelector('.yuri');
+        let routerYuri = document.querySelector('.router_yuri');
+
+        let kostin = document.querySelector('.kostin');
+        let routerKostin = document.querySelector('.router_igor');
+
+        let tatiana = document.querySelector('.tatiana');
+        let routerTatiana = document.querySelector('.router_tatiana');
+
+        let liquidateur = document.querySelector('.liquidateur');
+        let routerLiquidateur = document.querySelector('.router_yuri');
+
+        if(yuri.style.opacity == 0) {
+          yuri.style.opacity = '1'
+          routerYuri.style.display = 'block';
+          routerYuri.style.position = 'absolute';
+          routerYuri.style.right = '27px';
+          routerYuri.style.bottom = '21px';
+          routerYuri.style.zIndex = '2';
+
+          kostin.style.opacity = '0';
+          routerKostin.style.display = 'none';
+
+          tatiana.style.opacity = '0';
+          routerTatiana.style.display = 'none';
+
+          liquidateur.style.opacity = '0';
+          routerLiquidateur.style.display = 'none';
+
+        } else {
+          yuri.style.opacity = '0';
+          routerYuri.style.display = 'none';
+        }
+      },
+      tatiana: function() {
+        let tatiana = document.querySelector('.tatiana');
+        let routerTatiana = document.querySelector('.router_tatiana');
+
+        let yuri = document.querySelector('.yuri');
+        let routerYuri = document.querySelector('.router_yuri');
+
+        let kostin = document.querySelector('.kostin');
+        let routerKostin = document.querySelector('.router_igor');
+
+        let liquidateur = document.querySelector('.liquidateur');
+        let routerLiquidateur = document.querySelector('.router_yuri');
+
+        if(tatiana.style.opacity == 0) {
+          tatiana.style.opacity = '1';
+          routerTatiana.style.display = 'block';
+          routerTatiana.style.position = 'absolute';
+          routerTatiana.style.right = '27px';
+          routerTatiana.style.bottom = '20px';
+
+          yuri.style.opacity = '0';
+          routerYuri.style.display = 'none';
+
+          kostin.style.opacity = '0';
+          routerKostin.style.display = 'none';
+
+          liquidateur.style.opacity = '0';
+          routerLiquidateur.style.display = 'none';
+
+        } else {
+          tatiana.style.opacity = '0';
+          routerTatiana.style.display = 'none';
+        }
+      },
+      liquidateur: function() {
+        let liquidateur = document.querySelector('.liquidateur');
+        let routerLiquidateur = document.querySelector('.router_liquidateur');
+
+        let tatiana = document.querySelector('.tatiana');
+        let routerTatiana = document.querySelector('.router_tatiana');
+
+        let yuri = document.querySelector('.yuri');
+        let routerYuri = document.querySelector('.router_yuri');
+
+        let kostin = document.querySelector('.kostin');
+        let routerKostin = document.querySelector('.router_igor');
+        
+        if(liquidateur.style.opacity == 0) {
+          liquidateur.style.opacity = '1';
+          routerLiquidateur.style.display = 'block';
+          routerLiquidateur.style.position = 'absolute';
+          routerLiquidateur.style.right = '29px';
+          routerLiquidateur.style.bottom = '13px';
+
+          yuri.style.opacity = '0';
+          routerYuri.style.display = 'none';
+
+          tatiana.style.opacity = '0';
+          routerTatiana.style.display = 'none';
+
+          kostin.style.opacity = '0';
+          routerKostin.style.display = 'none';
+
+        } else {
+          liquidateur.style.opacity = '0';
+          routerLiquidateur.style.display = 'none';
+        }
+      },
     },
   }; 
 </script>

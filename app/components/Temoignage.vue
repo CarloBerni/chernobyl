@@ -2,11 +2,11 @@
   <div class="big-container">
     <section class="section__1 scrollto" v-bind:style="{ backgroundImage: 'url(' + step.background__1 + ')' }">
       <div class="container__text">
-        <h1 class="texte__title__left" v-if="$route.params.id">{{step.title}}</h1>
+        <h1 class="texte__title__left lines" v-if="$route.params.id">{{step.title}}</h1>
         <p v-if="$route.params.id">{{step.profession}}</p>
-        <p class="big__texte" v-if="$route.params.id">{{step.texte__1}}</p>
-        <p class="big__texte" v-if="$route.params.id">{{step.texte__2}}</p>
-        <p class="big__texte" v-if="$route.params.id">{{step.texte__3}}</p>
+        <p class="big__texte lines" v-if="$route.params.id">{{step.texte__1}}</p>
+        <p class="big__texte lines" v-if="$route.params.id">{{step.texte__2}}</p>
+        <p class="big__texte lines" v-if="$route.params.id">{{step.texte__3}}</p>
       </div>
     </section>
     <section class="section__2 scrollto">
@@ -16,13 +16,13 @@
     </section>
     <section class="section__3 scrollto" v-bind:style="{ backgroundImage: 'url(' + step.background__2 + ')' }">
       <div class="container__text">
-        <h1 class="texte__title__right" v-if="$route.params.id">{{step.sentence__1}}</h1>
-        <p v-if="$route.params.id">{{step.sentence__2}}</p>
-        <p v-if="$route.params.id">
+        <h1 class="texte__title__right lines" v-if="$route.params.id">{{step.sentence__1}}</h1>
+        <p class="lines" v-if="$route.params.id">{{step.sentence__2}}</p>
+        <p class="lines" v-if="$route.params.id">
           <span>{{step.sentence__3}}</span>
           {{step.sentence__4}}
         </p>
-        <p v-if="$route.params.id">{{step.sentence__5}}</p>
+        <p class="lines" v-if="$route.params.id">{{step.sentence__5}}</p>
       </div>
     </section>
     <section
@@ -49,8 +49,8 @@
     </section>
     <section class="section__5 scrollto" v-bind:style="{ backgroundImage: 'url(' + step.background__3 + ')' }">
       <div class="container__text">
-        <p class="big__texte" v-if="$route.params.id">{{step.sentence__6}}</p>
-        <p class="big__texte" v-if="$route.params.id">{{step.sentence__7}}</p>
+        <p class="big__texte lines" v-if="$route.params.id">{{step.sentence__6}}</p>
+        <p class="big__texte lines" v-if="$route.params.id">{{step.sentence__7}}</p>
       </div>
     </section>
     <section class="section__6 scrollto">
@@ -68,6 +68,8 @@
 
 <script>
 import game from "../data.js";
+
+
 
 setTimeout(() => {
     let sections = document.querySelectorAll(".scrollto");

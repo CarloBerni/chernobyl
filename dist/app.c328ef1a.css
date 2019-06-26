@@ -54,7 +54,7 @@
 }
 .maps[data-v-d58708] {
   border: 1px solid purple;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   stroke: white;
   fill: white;
@@ -115,17 +115,14 @@
 }
 .kostin[data-v-d58708] {
   opacity: 0;
-  height: 14.946rem;
   position: absolute;
   background-color: #660003;
   color: white;
   border-radius: 0.3125rem;
   overflow: hidden;
   left: 7vw;
-  top: 45vh;
-}
-.kostin--open[data-v-d58708] {
-  opacity: 1;
+  top: 34vh;
+  width: 15.3vw;
 }
 .info__name[data-v-d58708] {
   margin-left: 0.6rem;
@@ -138,14 +135,100 @@
   font-size: 1rem;
 }
 .kostin__picture[data-v-d58708] {
-  height: 10.5rem;
-  width: 10rem;
+  width: 15.3rem;
+}
+.kostin__info[data-v-d58708] {
+  height: 3.3rem;
 }
 .kostin__story[data-v-d58708] {
   margin-left: 23px;
 }
-.router_link[data-v-d58708] {
+.router_igor[data-v-d58708] {
   display: none;
+}
+.yuri[data-v-d58708] {
+  opacity: 0;
+  position: absolute;
+  background-color: #660003;
+  color: white;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  left: 40vw;
+  top: 45vh;
+  width: 22vw;
+}
+.yuri__picture[data-v-d58708] {
+  width: 22rem;
+}
+.yuri__info[data-v-d58708] {
+  height: 3.3rem;
+}
+.job--yuri[data-v-d58708] {
+  margin-bottom: 2px;
+}
+.yuri__story[data-v-d58708] {
+  margin-left: 23px;
+}
+.router_yuri[data-v-d58708] {
+  display: none;
+}
+.tatiana[data-v-d58708] {
+  opacity: 0;
+  position: absolute;
+  background-color: #660003;
+  color: white;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  left: 40vw;
+  top: 5vh;
+  width: 17vw;
+}
+.tatiana__picture[data-v-d58708] {
+  width: 17rem;
+}
+.tatiana__info[data-v-d58708] {
+  height: 3.3rem;
+}
+.job--tatiana[data-v-d58708] {
+  margin-bottom: 2px;
+}
+.tatiana__story[data-v-d58708] {
+  margin-left: 23px;
+}
+.router_tatiana[data-v-d58708] {
+  display: none;
+}
+.liquidateur[data-v-d58708] {
+  opacity: 0;
+  position: absolute;
+  background-color: #660003;
+  color: white;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  left: 50vw;
+  top: 55vh;
+  width: 17vw;
+}
+.liquidateur__picture[data-v-d58708] {
+  width: 17rem;
+}
+.liquidateur__info[data-v-d58708] {
+  height: 2rem;
+}
+.job--liquidateur[data-v-d58708] {
+  margin-bottom: 2px;
+}
+.liquidateur__story[data-v-d58708] {
+  margin-left: 23px;
+}
+.router_liquidateur[data-v-d58708] {
+  display: none;
+}
+.Calque_1[data-v-d58708] {
+  fill: #b2b2b2;
+  opacity: 0.5;
+  position: absolute;
+  width: 20px;
 }
 .big-container[data-v-77c20f] {
   display: flex;
