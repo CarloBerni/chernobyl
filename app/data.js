@@ -1,4 +1,5 @@
-const mp4 = require('../app/assets/images/*.mp4')
+const mp4 = require('../app/assets/images/*.mp4');
+const mp3 = require('./assets/images/*.mp3');
 
 export default {
 
@@ -46,7 +47,8 @@ export default {
       "image__slider__4": "https://i.goopics.net/aOjKZ.png",
       "image__slider__5": "https://i.goopics.net/gE1Ko.png",
       "video__1": mp4.igor,
-      "video__2": mp4.outroIgor
+      "video__2": mp4.outroIgor,
+      "soundAmbient": mp3.ambience
     },
   ]
  }

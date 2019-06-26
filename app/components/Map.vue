@@ -2153,12 +2153,11 @@
 
 
 <script>
-  export default {
-    data() {
-      return {
+  import game from "../data.js";
+  import sound from "./Sound";
 
-      }
-    },
+
+  export default {
     methods: {
       kostin: function(event) {
         let kostin = document.querySelector('.kostin');
@@ -2298,5 +2297,9 @@
         }
       },
     },
+    mounted() {
+      var audio = new Audio(require('../assets/images/ambiance.mp3'));
+      audio.play() ;
+    }
   }; 
 </script>
