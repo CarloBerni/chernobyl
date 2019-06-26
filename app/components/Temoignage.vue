@@ -1,6 +1,6 @@
 <template>
   <div class="big-container">
-    <div class="section__1" v-bind:style="{ backgroundImage: 'url(' + step.background__1 + ')' }">
+    <section class="section__1 scrollto" v-bind:style="{ backgroundImage: 'url(' + step.background__1 + ')' }">
       <div class="container__text">
         <h1 class="texte__title__left" v-if="$route.params.id">{{step.title}}</h1>
         <p v-if="$route.params.id">{{step.profession}}</p>
@@ -8,13 +8,13 @@
         <p class="big__texte" v-if="$route.params.id">{{step.texte__2}}</p>
         <p class="big__texte" v-if="$route.params.id">{{step.texte__3}}</p>
       </div>
-    </div>
-    <div class="section__2">
+    </section>
+    <section class="section__2 scrollto">
       <video class="video" autoplay muted loop>
         <source v-bind:src="step.video__1">
       </video>
-    </div>
-    <div class="section__3" v-bind:style="{ backgroundImage: 'url(' + step.background__2 + ')' }">
+    </section>
+    <section class="section__3 scrollto" v-bind:style="{ backgroundImage: 'url(' + step.background__2 + ')' }">
       <div class="container__text">
         <h1 class="texte__title__right" v-if="$route.params.id">{{step.sentence__1}}</h1>
         <p v-if="$route.params.id">{{step.sentence__2}}</p>
@@ -24,9 +24,9 @@
         </p>
         <p v-if="$route.params.id">{{step.sentence__5}}</p>
       </div>
-    </div>
-    <div
-      class="section__4"
+    </section>
+    <section
+      class="section__4 scrollto"
       v-bind:style="{ backgroundImage: 'url(' + step.background__slider + ')' }"
     >
       <carousel-3d style="margin-top: 60px;" :width="1300" :height="850">
@@ -46,14 +46,14 @@
           <img class="image__slider" v-bind:src="step.image__slider__5">
         </slide>
       </carousel-3d>
-    </div>
-    <div class="section__5" v-bind:style="{ backgroundImage: 'url(' + step.background__3 + ')' }">
+    </section>
+    <section class="section__5 scrollto" v-bind:style="{ backgroundImage: 'url(' + step.background__3 + ')' }">
       <div class="container__text">
         <p class="big__texte" v-if="$route.params.id">{{step.sentence__6}}</p>
         <p class="big__texte" v-if="$route.params.id">{{step.sentence__7}}</p>
       </div>
-    </div>
-    <div class="section__6">
+    </section>
+    <section class="section__6 scrollto">
       <video class="video" autoplay loop>
         <source v-bind:src="step.video__2">
       </video>
@@ -62,12 +62,50 @@
         <router-link class="button" to="/map">Map</router-link>
         <router-link class="button" to="/map">Map</router-link>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
 <script>
 import game from "../data.js";
+
+setTimeout(() => {
+    let sections = document.querySelectorAll(".scrollto");
+    let pos = 0;
+    let scroll = 0;
+    let flag = true;
+    let offset = 0;
+    window.addEventListener("wheel", e => {
+      // If the function is allowed to run
+      if (flag) {
+        if (e.deltaY > 5 && pos < sections.length - 1) {
+          pos += 1;
+          offset = sections[pos].offsetTop;
+          window.scrollTo({
+            behavior: "smooth",
+            top: offset
+          });
+          flag = false;
+          // Allow the listener to work again
+          setTimeout(() => {
+            flag = true;
+          }, 1000);
+        } else if (e.deltaY < -5 && pos > 0) {
+          pos -= 1;
+          offset = sections[pos].offsetTop;
+          window.scrollTo({
+            behavior: "smooth",
+            top: offset
+          });
+          flag = false;
+          // Allow the listener to work again
+          setTimeout(() => {
+            flag = true;
+          }, 1000);
+        }
+      }
+    });
+  }, 200);
 
 export default {
   data() {

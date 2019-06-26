@@ -25535,6 +25535,43 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+setTimeout(function () {
+  var sections = document.querySelectorAll(".scrollto");
+  var pos = 0;
+  var scroll = 0;
+  var flag = true;
+  var offset = 0;
+  window.addEventListener("wheel", function (e) {
+    // If the function is allowed to run
+    if (flag) {
+      if (e.deltaY > 5 && pos < sections.length - 1) {
+        pos += 1;
+        offset = sections[pos].offsetTop;
+        window.scrollTo({
+          behavior: "smooth",
+          top: offset
+        });
+        flag = false; // Allow the listener to work again
+
+        setTimeout(function () {
+          flag = true;
+        }, 1000);
+      } else if (e.deltaY < -5 && pos > 0) {
+        pos -= 1;
+        offset = sections[pos].offsetTop;
+        window.scrollTo({
+          behavior: "smooth",
+          top: offset
+        });
+        flag = false; // Allow the listener to work again
+
+        setTimeout(function () {
+          flag = true;
+        }, 1000);
+      }
+    }
+  });
+}, 200);
 var _default = {
   data: function data() {
     return {
@@ -25571,9 +25608,9 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "big-container" }, [
     _c(
-      "div",
+      "section",
       {
-        staticClass: "section__1",
+        staticClass: "section__1 scrollto",
         style: { backgroundImage: "url(" + _vm.step.background__1 + ")" }
       },
       [
@@ -25609,7 +25646,7 @@ exports.default = _default;
       ]
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "section__2" }, [
+    _c("section", { staticClass: "section__2 scrollto" }, [
       _c(
         "video",
         {
@@ -25622,9 +25659,9 @@ exports.default = _default;
     ]),
     _vm._v(" "),
     _c(
-      "div",
+      "section",
       {
-        staticClass: "section__3",
+        staticClass: "section__3 scrollto",
         style: { backgroundImage: "url(" + _vm.step.background__2 + ")" }
       },
       [
@@ -25654,9 +25691,9 @@ exports.default = _default;
     ),
     _vm._v(" "),
     _c(
-      "div",
+      "section",
       {
-        staticClass: "section__4",
+        staticClass: "section__4 scrollto",
         style: { backgroundImage: "url(" + _vm.step.background__slider + ")" }
       },
       [
@@ -25709,9 +25746,9 @@ exports.default = _default;
     ),
     _vm._v(" "),
     _c(
-      "div",
+      "section",
       {
-        staticClass: "section__5",
+        staticClass: "section__5 scrollto",
         style: { backgroundImage: "url(" + _vm.step.background__3 + ")" }
       },
       [
@@ -25731,7 +25768,7 @@ exports.default = _default;
       ]
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "section__6" }, [
+    _c("section", { staticClass: "section__6 scrollto" }, [
       _c("video", { staticClass: "video", attrs: { autoplay: "", loop: "" } }, [
         _c("source", { attrs: { src: _vm.step.video__2 } })
       ]),
@@ -25893,7 +25930,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64377" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52212" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
