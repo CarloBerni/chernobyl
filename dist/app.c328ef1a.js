@@ -15081,14 +15081,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $ec7312 = exports.default || module.exports;
+        var $ca6720 = exports.default || module.exports;
       
-      if (typeof $ec7312 === 'function') {
-        $ec7312 = $ec7312.options;
+      if (typeof $ca6720 === 'function') {
+        $ca6720 = $ca6720.options;
       }
     
         /* template */
-        Object.assign($ec7312, (function () {
+        Object.assign($ca6720, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -15130,7 +15130,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-ec7312",
+            _scopeId: "data-v-ca6720",
             functional: undefined
           };
         })());
@@ -15143,9 +15143,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$ec7312', $ec7312);
+            api.createRecord('$ca6720', $ca6720);
           } else {
-            api.reload('$ec7312', $ec7312);
+            api.reload('$ca6720', $ca6720);
           }
         }
 
@@ -15188,14 +15188,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $0f2a57 = exports.default || module.exports;
+        var $0c4d4b = exports.default || module.exports;
       
-      if (typeof $0f2a57 === 'function') {
-        $0f2a57 = $0f2a57.options;
+      if (typeof $0c4d4b === 'function') {
+        $0c4d4b = $0c4d4b.options;
       }
     
         /* template */
-        Object.assign($0f2a57, (function () {
+        Object.assign($0c4d4b, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -15278,7 +15278,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-0f2a57",
+            _scopeId: "data-v-0c4d4b",
             functional: undefined
           };
         })());
@@ -15291,9 +15291,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$0f2a57', $0f2a57);
+            api.createRecord('$0c4d4b', $0c4d4b);
           } else {
-            api.reload('$0f2a57', $0f2a57);
+            api.reload('$0c4d4b', $0c4d4b);
           }
         }
 
@@ -17582,14 +17582,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $05c120 = exports.default || module.exports;
+        var $d58708 = exports.default || module.exports;
       
-      if (typeof $05c120 === 'function') {
-        $05c120 = $05c120.options;
+      if (typeof $d58708 === 'function') {
+        $d58708 = $d58708.options;
       }
     
         /* template */
-        Object.assign($05c120, (function () {
+        Object.assign($d58708, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -25764,7 +25764,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-05c120",
+            _scopeId: "data-v-d58708",
             functional: undefined
           };
         })());
@@ -25777,9 +25777,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$05c120', $05c120);
+            api.createRecord('$d58708', $d58708);
           } else {
-            api.reload('$05c120', $05c120);
+            api.reload('$d58708', $d58708);
           }
         }
 
@@ -25996,14 +25996,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $b72ef4 = exports.default || module.exports;
+        var $77c20f = exports.default || module.exports;
       
-      if (typeof $b72ef4 === 'function') {
-        $b72ef4 = $b72ef4.options;
+      if (typeof $77c20f === 'function') {
+        $77c20f = $77c20f.options;
       }
     
         /* template */
-        Object.assign($b72ef4, (function () {
+        Object.assign($77c20f, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -26207,7 +26207,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-b72ef4",
+            _scopeId: "data-v-77c20f",
             functional: undefined
           };
         })());
@@ -26220,9 +26220,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$b72ef4', $b72ef4);
+            api.createRecord('$77c20f', $77c20f);
           } else {
-            api.reload('$b72ef4', $b72ef4);
+            api.reload('$77c20f', $77c20f);
           }
         }
 
@@ -26308,19 +26308,13 @@ _vue.default.use(_vueCarousel3d.default);
 new _vue.default({
   router: _router.default
 }).$mount('#root');
-var tl = new TimelineLite();
+/*
+ var tl = new TimelineLite();
 var lines = $('.lines');
-
-for (var i = 0; i < 10; i++) {
-  var fromY = i % 1 == 0 ? +50 : 50;
-  tl.from(lines[i], 1, {
-    y: fromY,
-    autoAlpha: 0,
-    ease: Power3.easeOut
-  }, i * 1);
-}
-
-;
+for(var i =0; i < 10; i++) {
+var fromY = (i%1==0) ? +50 :50;
+tl.from(lines[i],1,{y:fromY, autoAlpha:0,ease:Power3.easeOut}, i*1)
+};*/
 },{"vue":"../node_modules/vue/dist/vue.common.js","vue-carousel-3d":"../node_modules/vue-carousel-3d/dist/vue-carousel-3d.min.js","./router":"router.js","./assets/scss/styles.scss":"assets/scss/styles.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -26349,7 +26343,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59586" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49448" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
