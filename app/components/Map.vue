@@ -2300,6 +2300,7 @@
     mounted() {
       var audio = new Audio(require('../assets/images/ambiance.mp3'));
       audio.play() ;
+      audio.loop = true ;
     }
   }; 
 </script>

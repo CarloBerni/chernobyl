@@ -15304,13 +15304,143 @@ render._withStripped = true
       
       }
     })();
-},{"./../assets/images/map-min.png":[["map-min.7ca13b0b.png","assets/images/map-min.png"],"assets/images/map-min.png"],"./../assets/images/bg__intro-min.png":[["bg__intro-min.4cd81d6c.png","assets/images/bg__intro-min.png"],"assets/images/bg__intro-min.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Map.vue":[function(require,module,exports) {
+},{"./../assets/images/map-min.png":[["map-min.7ca13b0b.png","assets/images/map-min.png"],"assets/images/map-min.png"],"./../assets/images/bg__intro-min.png":[["bg__intro-min.4cd81d6c.png","assets/images/bg__intro-min.png"],"assets/images/bg__intro-min.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"assets/images/igor.mp4":[function(require,module,exports) {
+module.exports = "/igor.1b54c3dc.mp4";
+},{}],"assets/images/outroIgor.mp4":[function(require,module,exports) {
+module.exports = "/outroIgor.fe28a8be.mp4";
+},{}],"assets/images/*.mp4":[function(require,module,exports) {
+module.exports = {
+  "Intro": require("./Intro.mp4"),
+  "igor": require("./igor.mp4"),
+  "outroIgor": require("./outroIgor.mp4")
+};
+},{"./Intro.mp4":"assets/images/Intro.mp4","./igor.mp4":"assets/images/igor.mp4","./outroIgor.mp4":"assets/images/outroIgor.mp4"}],"assets/images/ambiance.mp3":[function(require,module,exports) {
+module.exports = "/ambiance.d940f3b5.mp3";
+},{}],"assets/images/*.mp3":[function(require,module,exports) {
+module.exports = {
+  "ambiance": require("./ambiance.mp3")
+};
+},{"./ambiance.mp3":"assets/images/ambiance.mp3"}],"data.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+
+var mp4 = require('../app/assets/images/*.mp4');
+
+var mp3 = require('./assets/images/*.mp3');
+
+var _default = {
+  "steps": [{
+    "id": 1,
+    "background__1": "https://i.goopics.net/OKPj7.png",
+    "title": "Igor Kostine",
+    "profession": "Photographe",
+    "texte__1": "Surnommé << l'Homme légendaire >> par le Washington Post, Igor Kostine est un témoin capital de la catastrophe de Tchernobyl. Le 26 avril 1986, quelques heures seulement après l'explosion, il survole la centrale.",
+    "texte__2": "Surpris par l'ampleur de la catastrophe et par le silence des autorités, Igor Kostine décide de rester sur place et de vivre au milieu des 800 000 << liquidateurs >> qui se succéderont sur le site de l'accident.",
+    "texte__3": "Lui-même irradié, il n'aura de cesse, vingt années durant, de photographier la centrale et la zone interdite qui l'entoure. Son histoire se confond avec celle de Tchernobyl. Il a vu l'évacuation des villages, le désespoir et le courage des populations, la construction du sarcophage, les hommes déplaçant à mains nues des blocs radioactifs, les cimetières de machines, les jardins et les vergers contaminés redevenus des terres sauvages où l'homme n'a plus sa place...",
+    "background__2": "https://i.goopics.net/jv1my.png",
+    "sentence__1": "<< Le soir, quand je développais la pellicule, je la trouvais mouchetée de tâches à cause de la radiation. >>",
+    "sentence__2": "<< Igor, pour utiliser de manière plus efficace la main-d’œuvre, prends une photo panoramique du toit pour que les soldats l’étudient et sachent où exactement aller quand ils sortent de l’ascenseur afin qu’ils ne fassent pas de mouvements inutiles. >>",
+    "sentence__3": "-Nikolaï Tarakanov",
+    "sentence__4": ", Général de Division ayant mené l’operation de décontamination du toit.",
+    "sentence__5": "<< À six heures du matin, nous avons embarqué dans un hélicoptère militaire à l’aide duquel les soldats devaient s’approcher du tuyau. >>",
+    "background__3": "https://i.goopics.net/4vxj8.png",
+    "sentence__6": "<< J’ai survolé 50 fois le réacteur numéro 4 en hélicoptère. J’ai pris des photos à toutes les étapes de la liquidation de cette catastrophe. J’ai photographié des gens descendant dans la mine, les soldats « liquidateurs » travaillant sur le toit de la centrale.” Personne n’avait jamais vu une chose pareille. >>",
+    "sentence__7": "<< Au début, le Japon et l’Allemagne avaient envoyé des robots, mais à cause de l’irradiation, ils se sont bloqués. Je les ai photographiés depuis l’hélicoptère pendant qu’ils s’écroulaient. Après cela, des milliers de soldats ont dû nettoyer le graphite radioactif et le toit du troisième bloc de la centrale d’une surface de 250 mètres carrés. >>",
+    "background__slider": "https://i.goopics.net/K8wm3.png",
+    "image__slider": "https://i.goopics.net/VvmDV.png",
+    "image__slider__2": "https://i.goopics.net/qvpGk.png",
+    "image__slider__3": "https://i.goopics.net/kjVky.png",
+    "image__slider__4": "https://i.goopics.net/aOjKZ.png",
+    "image__slider__5": "https://i.goopics.net/gE1Ko.png",
+    "video__1": mp4.igor,
+    "video__2": mp4.outroIgor
+  }, {
+    "id": 2,
+    "background__1": "https://i.goopics.net/aOg1Z.png",
+    "title": "Yuri Korneev",
+    "profession": "Opérateur turbine de la centrale",
+    "texte__1": "<< Au moment où la turbine a cessé de fonctionner, il y a eu une explosion soudaine dans la zone du corridor de la tuyauterie. Je l'ai vu de mes propres yeux, entendu de mes propres oreilles. J'ai vu des morceaux du mur en béton armé commencer à s'effriter et le toit en béton armé de notre Turbine 7 a commencé à tomber. >>",
+    "background__2": "https://i.goopics.net/eQmA5.png",
+    "sentence__1": "<< C'était tellement inattendu. Il était difficile de comprendre ce qui se passait. L'explosion et l'effondrement du toit n'ont pris qu'une minute, peut-être même moins. Immédiatement après, Boris Rogoshin, chef de quart, et l’ingénieur en chef adjoint (maintenant décédé) se sont précipités dans la salle des turbines depuis le centre de contrôle. On m'a ordonné de m'occuper de Turbine 8 et de ne faire attention à rien d'autre. >>",
+    "background__3": "https://i.goopics.net/dR7EL.png",
+    "sentence__6": "<< J'étais complètement dans le noir. . . Pendant que j'étais occupé avec la turbine, un électricien, Baranov - qui est décédé plus tard à l'hôpital de Moscou - s'est précipité et a commencé à pomper l'hydrogène qui a refroidi le générateur à turbine. Ses actions ont empeché une autre explosion. >>",
+    "background__slider": "https://i.goopics.net/K8wm3.png",
+    "image__slider": "https://i.goopics.net/VvmDV.png",
+    "image__slider__2": "https://i.goopics.net/qvpGk.png",
+    "image__slider__3": "https://i.goopics.net/kjVky.png",
+    "image__slider__4": "https://i.goopics.net/aOjKZ.png",
+    "image__slider__5": "https://i.goopics.net/gE1Ko.png",
+    "video__1": mp4.igor,
+    "video__2": mp4.outroIgor,
+    "soundAmbient": mp3.ambience
+  }]
+};
+exports.default = _default;
+},{"../app/assets/images/*.mp4":"assets/images/*.mp4","./assets/images/*.mp3":"assets/images/*.mp3"}],"components/Sound.vue":[function(require,module,exports) {
+
+        var $9c9556 = exports.default || module.exports;
+      
+      if (typeof $9c9556 === 'function') {
+        $9c9556 = $9c9556.options;
+      }
+    
+        /* template */
+        Object.assign($9c9556, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("audio", { attrs: { autoplay: "", loop: "" } }, [
+    _c("source", { attrs: { src: _vm.step.soundAmbient, type: "audio/mpeg" } })
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: null,
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$9c9556', $9c9556);
+          } else {
+            api.reload('$9c9556', $9c9556);
+          }
+        }
+
+        
+      }
+    })();
+},{"vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Map.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _data = _interopRequireDefault(require("../data.js"));
+
+var _Sound = _interopRequireDefault(require("./Sound"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 //
 //
 //
@@ -17466,9 +17596,6 @@ exports.default = void 0;
 //
 //
 var _default = {
-  data: function data() {
-    return {};
-  },
   methods: {
     kostin: function kostin(event) {
       var kostin = document.querySelector('.kostin');
@@ -17579,6 +17706,11 @@ var _default = {
         routerLiquidateur.style.display = 'none';
       }
     }
+  },
+  mounted: function mounted() {
+    var audio = new Audio(require('../assets/images/ambiance.mp3'));
+    audio.play();
+    audio.loop = true;
   }
 };
 exports.default = _default;
@@ -25790,74 +25922,7 @@ render._withStripped = true
       
       }
     })();
-},{"./../assets/images/Igor__Kostin.jpg":[["Igor__Kostin.0b70b8c7.jpg","assets/images/Igor__Kostin.jpg"],"assets/images/Igor__Kostin.jpg"],"./../assets/images/chernobylworker.jpg":[["chernobylworker.2ad1d57b.jpg","assets/images/chernobylworker.jpg"],"assets/images/chernobylworker.jpg"],"./../assets/images/fille_pripyat.png":[["fille_pripyat.7634132a.png","assets/images/fille_pripyat.png"],"assets/images/fille_pripyat.png"],"./../assets/images/liquidateur.png":[["liquidateur.8ecb220c.png","assets/images/liquidateur.png"],"assets/images/liquidateur.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"assets/images/igor.mp4":[function(require,module,exports) {
-module.exports = "/igor.1b54c3dc.mp4";
-},{}],"assets/images/outroIgor.mp4":[function(require,module,exports) {
-module.exports = "/outroIgor.fe28a8be.mp4";
-},{}],"assets/images/*.mp4":[function(require,module,exports) {
-module.exports = {
-  "Intro": require("./Intro.mp4"),
-  "igor": require("./igor.mp4"),
-  "outroIgor": require("./outroIgor.mp4")
-};
-},{"./Intro.mp4":"assets/images/Intro.mp4","./igor.mp4":"assets/images/igor.mp4","./outroIgor.mp4":"assets/images/outroIgor.mp4"}],"data.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var mp4 = require('../app/assets/images/*.mp4');
-
-var _default = {
-  "steps": [{
-    "id": 1,
-    "background__1": "https://i.goopics.net/OKPj7.png",
-    "title": "Igor Kostine",
-    "profession": "Photographe",
-    "texte__1": "Surnommé << l'Homme légendaire >> par le Washington Post, Igor Kostine est un témoin capital de la catastrophe de Tchernobyl. Le 26 avril 1986, quelques heures seulement après l'explosion, il survole la centrale.",
-    "texte__2": "Surpris par l'ampleur de la catastrophe et par le silence des autorités, Igor Kostine décide de rester sur place et de vivre au milieu des 800 000 << liquidateurs >> qui se succéderont sur le site de l'accident.",
-    "texte__3": "Lui-même irradié, il n'aura de cesse, vingt années durant, de photographier la centrale et la zone interdite qui l'entoure. Son histoire se confond avec celle de Tchernobyl. Il a vu l'évacuation des villages, le désespoir et le courage des populations, la construction du sarcophage, les hommes déplaçant à mains nues des blocs radioactifs, les cimetières de machines, les jardins et les vergers contaminés redevenus des terres sauvages où l'homme n'a plus sa place...",
-    "background__2": "https://i.goopics.net/jv1my.png",
-    "sentence__1": "<< Le soir, quand je développais la pellicule, je la trouvais mouchetée de tâches à cause de la radiation. >>",
-    "sentence__2": "<< Igor, pour utiliser de manière plus efficace la main-d’œuvre, prends une photo panoramique du toit pour que les soldats l’étudient et sachent où exactement aller quand ils sortent de l’ascenseur afin qu’ils ne fassent pas de mouvements inutiles. >>",
-    "sentence__3": "-Nikolaï Tarakanov",
-    "sentence__4": ", Général de Division ayant mené l’operation de décontamination du toit.",
-    "sentence__5": "<< À six heures du matin, nous avons embarqué dans un hélicoptère militaire à l’aide duquel les soldats devaient s’approcher du tuyau. >>",
-    "background__3": "https://i.goopics.net/4vxj8.png",
-    "sentence__6": "<< J’ai survolé 50 fois le réacteur numéro 4 en hélicoptère. J’ai pris des photos à toutes les étapes de la liquidation de cette catastrophe. J’ai photographié des gens descendant dans la mine, les soldats « liquidateurs » travaillant sur le toit de la centrale.” Personne n’avait jamais vu une chose pareille. >>",
-    "sentence__7": "<< Au début, le Japon et l’Allemagne avaient envoyé des robots, mais à cause de l’irradiation, ils se sont bloqués. Je les ai photographiés depuis l’hélicoptère pendant qu’ils s’écroulaient. Après cela, des milliers de soldats ont dû nettoyer le graphite radioactif et le toit du troisième bloc de la centrale d’une surface de 250 mètres carrés. >>",
-    "background__slider": "https://i.goopics.net/K8wm3.png",
-    "image__slider": "https://i.goopics.net/VvmDV.png",
-    "image__slider__2": "https://i.goopics.net/qvpGk.png",
-    "image__slider__3": "https://i.goopics.net/kjVky.png",
-    "image__slider__4": "https://i.goopics.net/aOjKZ.png",
-    "image__slider__5": "https://i.goopics.net/gE1Ko.png",
-    "video__1": mp4.igor,
-    "video__2": mp4.outroIgor
-  }, {
-    "id": 2,
-    "background__1": "https://i.goopics.net/aOg1Z.png",
-    "title": "Yuri Korneev",
-    "profession": "Opérateur turbine de la centrale",
-    "texte__1": "<< Au moment où la turbine a cessé de fonctionner, il y a eu une explosion soudaine dans la zone du corridor de la tuyauterie. Je l'ai vu de mes propres yeux, entendu de mes propres oreilles. J'ai vu des morceaux du mur en béton armé commencer à s'effriter et le toit en béton armé de notre Turbine 7 a commencé à tomber. >>",
-    "background__2": "https://i.goopics.net/eQmA5.png",
-    "sentence__1": "<< C'était tellement inattendu. Il était difficile de comprendre ce qui se passait. L'explosion et l'effondrement du toit n'ont pris qu'une minute, peut-être même moins. Immédiatement après, Boris Rogoshin, chef de quart, et l’ingénieur en chef adjoint (maintenant décédé) se sont précipités dans la salle des turbines depuis le centre de contrôle. On m'a ordonné de m'occuper de Turbine 8 et de ne faire attention à rien d'autre. >>",
-    "background__3": "https://i.goopics.net/dR7EL.png",
-    "sentence__6": "<< J'étais complètement dans le noir. . . Pendant que j'étais occupé avec la turbine, un électricien, Baranov - qui est décédé plus tard à l'hôpital de Moscou - s'est précipité et a commencé à pomper l'hydrogène qui a refroidi le générateur à turbine. Ses actions ont empeché une autre explosion. >>",
-    "background__slider": "https://i.goopics.net/K8wm3.png",
-    "image__slider": "https://i.goopics.net/VvmDV.png",
-    "image__slider__2": "https://i.goopics.net/qvpGk.png",
-    "image__slider__3": "https://i.goopics.net/kjVky.png",
-    "image__slider__4": "https://i.goopics.net/aOjKZ.png",
-    "image__slider__5": "https://i.goopics.net/gE1Ko.png",
-    "video__1": mp4.igor,
-    "video__2": mp4.outroIgor
-  }]
-};
-exports.default = _default;
-},{"../app/assets/images/*.mp4":"assets/images/*.mp4"}],"components/Temoignage.vue":[function(require,module,exports) {
+},{"../data.js":"data.js","./Sound":"components/Sound.vue","../assets/images/ambiance.mp3":"assets/images/ambiance.mp3","./../assets/images/Igor__Kostin.jpg":[["Igor__Kostin.0b70b8c7.jpg","assets/images/Igor__Kostin.jpg"],"assets/images/Igor__Kostin.jpg"],"./../assets/images/chernobylworker.jpg":[["chernobylworker.2ad1d57b.jpg","assets/images/chernobylworker.jpg"],"assets/images/chernobylworker.jpg"],"./../assets/images/fille_pripyat.png":[["fille_pripyat.7634132a.png","assets/images/fille_pripyat.png"],"assets/images/fille_pripyat.png"],"./../assets/images/liquidateur.png":[["liquidateur.8ecb220c.png","assets/images/liquidateur.png"],"assets/images/liquidateur.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.common.js"}],"components/Temoignage.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -26343,7 +26408,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49448" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53108" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
