@@ -28,7 +28,26 @@ export default {
       "image__slider__5": "https://i.goopics.net/gE1Ko.png",
       "video__1": mp4.igor,
       "video__2": mp4.outroIgor
-    }
+    },
+    {
+      "id": 2,
+      "background__1": "https://i.goopics.net/aOg1Z.png",
+      "title": "Yuri Korneev",
+      "profession": "Opérateur turbine de la centrale",
+      "texte__1": "<< Au moment où la turbine a cessé de fonctionner, il y a eu une explosion soudaine dans la zone du corridor de la tuyauterie. Je l'ai vu de mes propres yeux, entendu de mes propres oreilles. J'ai vu des morceaux du mur en béton armé commencer à s'effriter et le toit en béton armé de notre Turbine 7 a commencé à tomber. >>",
+      "background__2": "https://i.goopics.net/eQmA5.png",
+      "sentence__1": "<< C'était tellement inattendu. Il était difficile de comprendre ce qui se passait. L'explosion et l'effondrement du toit n'ont pris qu'une minute, peut-être même moins. Immédiatement après, Boris Rogoshin, chef de quart, et l’ingénieur en chef adjoint (maintenant décédé) se sont précipités dans la salle des turbines depuis le centre de contrôle. On m'a ordonné de m'occuper de Turbine 8 et de ne faire attention à rien d'autre. >>",
+      "background__3": "https://i.goopics.net/dR7EL.png",
+      "sentence__6": "<< J'étais complètement dans le noir. . . Pendant que j'étais occupé avec la turbine, un électricien, Baranov - qui est décédé plus tard à l'hôpital de Moscou - s'est précipité et a commencé à pomper l'hydrogène qui a refroidi le générateur à turbine. Ses actions ont empeché une autre explosion. >>",
+      "background__slider": "https://i.goopics.net/K8wm3.png",
+      "image__slider": "https://i.goopics.net/VvmDV.png",
+      "image__slider__2": "https://i.goopics.net/qvpGk.png",
+      "image__slider__3": "https://i.goopics.net/kjVky.png",
+      "image__slider__4": "https://i.goopics.net/aOjKZ.png",
+      "image__slider__5": "https://i.goopics.net/gE1Ko.png",
+      "video__1": mp4.igor,
+      "video__2": mp4.outroIgor
+    },
   ]
  }
   
