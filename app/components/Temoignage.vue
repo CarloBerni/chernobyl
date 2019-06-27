@@ -14,7 +14,7 @@
         </div>
       </section>
       <section class="section__2">
-        <video class="video" autoplay muted loop>
+        <video class="video" id="video" v-on:mouseover="mouseover" controls muted loop>
           <source v-bind:src="step.video__1">
         </video>
       </section>
@@ -64,7 +64,7 @@
         </div>
       </section>
       <section class="section__6">
-        <video class="video" autoplay loop>
+        <video class="video" id="videa" v-on:mouseover="mouseaver" controls loop>
           <source v-bind:src="step.video__2">
         </video>
         <div class="buttons">
@@ -96,7 +96,15 @@ export default {
       return game.steps.find(step => {
         return step.id === parseInt(this.$route.params.id, 10);
       });
-    }
+    },
+    mouseover: function() {
+      var video = document.getElementById('video');
+      video.play();
+    },
+    mouseaver: function() {
+      var videa = document.getElementById('videa');
+      videa.play();
+    },
   }
 };
 </script>
