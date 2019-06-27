@@ -14,7 +14,7 @@
         </div>
       </section>
       <section class="section__2">
-        <video class="video" autoplay controls loop>
+        <video class="video" id="videoOne" v-on:mouseover="overOne" controls loop>
           <source v-bind:src="step.video__1">
         </video>
       </section>
@@ -70,13 +70,13 @@
         </div>
       </section>
       <section class="section__6">
-        <video class="video" autoplay controls loop>
+        <video class="video" id="videoTwo" v-on:mouseover="overTwo" controls loop>
           <source v-bind:src="step.video__2">
         </video>
         <div class="buttons">
-          <router-link class="button" to="/map">Map</router-link>
-          <router-link class="button" to="/map">Map</router-link>
-          <router-link class="button" to="/map">Map</router-link>
+          <router-link class="button button--left" to="/map">Previous</router-link>
+          <router-link class="button button--center" to="/map">Map</router-link>
+          <router-link class="button button--right" to="/map">Next</router-link>
         </div>
       </section>
     </div>
@@ -101,7 +101,15 @@ export default {
       return game.steps.find(step => {
         return step.id === parseInt(this.$route.params.id, 10);
       });
-    }
+    },
+    overOne: function() {
+      let videoOne = document.getElementById('videoOne');
+      videoOne.play();
+    },
+    overTwo: function() {
+      let videoTwo = document.getElementById('videoTwo');
+      videoTwo.play();
+    },
   }
 };
 </script>
@@ -260,12 +268,26 @@ export default {
       height: 100vh;
     }
     .buttons {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      position: absolute;
+      bottom: 10vh;
+
       .button {
         margin: 20px;
+        width: 50px;
+        text-align: center;
+        position: absolute; 
+        bottom: 4vh;
+        background-color: #A50104;
+      }
+      .button--left {
+        left: 10vw;
+        text-align: center;
+      }
+      .button--center {
+        left: calc(50vw - 25px);
+      }
+      .button--right {
+        left: calc(90vw - 85px);
       }
     }
   }
