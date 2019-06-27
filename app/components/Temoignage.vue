@@ -1,113 +1,84 @@
 <template>
   <div class="big-container">
-    <section class="section__1 scrollto" v-bind:style="{ backgroundImage: 'url(' + step.background__1 + ')' }">
-      <div class="container__text">
-        <h1 class="texte__title__left lines" v-if="$route.params.id">{{step.title}}</h1>
-        <p v-if="$route.params.id">{{step.profession}}</p>
-        <p class="big__texte lines" v-if="$route.params.id">{{step.texte__1}}</p>
-        <p class="big__texte lines" v-if="$route.params.id">{{step.texte__2}}</p>
-        <p class="big__texte lines" v-if="$route.params.id">{{step.texte__3}}</p>
-      </div>
-    </section>
-    <section class="section__2 scrollto">
-      <video class="video" autoplay muted loop>
-        <source v-bind:src="step.video__1">
-      </video>
-    </section>
-    <section class="section__3 scrollto" v-bind:style="{ backgroundImage: 'url(' + step.background__2 + ')' }">
-      <div class="container__text">
-        <h1 class="texte__title__right lines" v-if="$route.params.id">{{step.sentence__1}}</h1>
-        <p class="lines" v-if="$route.params.id">{{step.sentence__2}}</p>
-        <p class="lines" v-if="$route.params.id">
-          <span>{{step.sentence__3}}</span>
-          {{step.sentence__4}}
-        </p>
-        <p class="lines" v-if="$route.params.id">{{step.sentence__5}}</p>
-      </div>
-    </section>
-    <section
-      class="section__4 scrollto"
-      v-bind:style="{ backgroundImage: 'url(' + step.background__slider + ')' }"
-    >
-      <carousel-3d style="margin-top: 60px;" :width="1300" :height="850">
-        <slide :index="0">
-          <img class="image__slider" v-bind:src="step.image__slider">
-        </slide>
-        <slide :index="1">
-          <img class="image__slider" v-bind:src="step.image__slider__2">
-        </slide>
-        <slide :index="2">
-          <img class="image__slider" v-bind:src="step.image__slider__3">
-        </slide>
-        <slide :index="3">
-          <img class="image__slider" v-bind:src="step.image__slider__4">
-        </slide>
-        <slide :index="4">
-          <img class="image__slider" v-bind:src="step.image__slider__5">
-        </slide>
-      </carousel-3d>
-    </section>
-    <section class="section__5 scrollto" v-bind:style="{ backgroundImage: 'url(' + step.background__3 + ')' }">
-      <div class="container__text">
-        <p class="big__texte lines" v-if="$route.params.id">{{step.sentence__6}}</p>
-        <p class="big__texte lines" v-if="$route.params.id">{{step.sentence__7}}</p>
-      </div>
-    </section>
-    <section class="section__6 scrollto">
-      <video class="video" autoplay loop>
-        <source v-bind:src="step.video__2">
-      </video>
-      <div class="buttons">
-        <router-link class="button" to="/map">Map</router-link>
-        <router-link class="button" to="/map">Map</router-link>
-        <router-link class="button" to="/map">Map</router-link>
-      </div>
-    </section>
+    <div class="container">
+      <section
+        class="section__1"
+        v-bind:style="{ backgroundImage: 'url(' + step.background__1 + ')' }"
+      >
+        <div class="container__text">
+          <h1 class="texte__title__left lines" v-if="$route.params.id">{{step.title}}</h1>
+          <p v-if="$route.params.id">{{step.profession}}</p>
+          <p class="big__texte lines" v-if="$route.params.id">{{step.texte__1}}</p>
+          <p class="big__texte lines" v-if="$route.params.id">{{step.texte__2}}</p>
+          <p class="big__texte lines" v-if="$route.params.id">{{step.texte__3}}</p>
+        </div>
+      </section>
+      <section class="section__2">
+        <video class="video" autoplay muted loop>
+          <source v-bind:src="step.video__1">
+        </video>
+      </section>
+      <section
+        class="section__3"
+        v-bind:style="{ backgroundImage: 'url(' + step.background__2 + ')' }"
+      >
+        <div class="container__text">
+          <h1 class="texte__title__right lines" v-if="$route.params.id">{{step.sentence__1}}</h1>
+          <p class="lines" v-if="$route.params.id">{{step.sentence__2}}</p>
+          <p class="lines" v-if="$route.params.id">
+            <span>{{step.sentence__3}}</span>
+            {{step.sentence__4}}
+          </p>
+          <p class="lines" v-if="$route.params.id">{{step.sentence__5}}</p>
+        </div>
+      </section>
+      <section
+        class="section__4"
+        v-bind:style="{ backgroundImage: 'url(' + step.background__slider + ')' }"
+      >
+        <carousel-3d style="margin-top: 90px;" :width="1200" :height="800">
+          <slide :index="0">
+            <img class="image__slider" v-bind:src="step.image__slider">
+          </slide>
+          <slide :index="1">
+            <img class="image__slider" v-bind:src="step.image__slider__2">
+          </slide>
+          <slide :index="2">
+            <img class="image__slider" v-bind:src="step.image__slider__3">
+          </slide>
+          <slide :index="3">
+            <img class="image__slider" v-bind:src="step.image__slider__4">
+          </slide>
+          <slide :index="4">
+            <img class="image__slider" v-bind:src="step.image__slider__5">
+          </slide>
+        </carousel-3d>
+      </section>
+      <section
+        class="section__5"
+        v-bind:style="{ backgroundImage: 'url(' + step.background__3 + ')' }"
+      >
+        <div class="container__text">
+          <p class="big__texte lines" v-if="$route.params.id">{{step.sentence__6}}</p>
+          <p class="big__texte lines" v-if="$route.params.id">{{step.sentence__7}}</p>
+        </div>
+      </section>
+      <section class="section__6">
+        <video class="video" autoplay loop>
+          <source v-bind:src="step.video__2">
+        </video>
+        <div class="buttons">
+          <router-link class="button" to="/map">Map</router-link>
+          <router-link class="button" to="/map">Map</router-link>
+          <router-link class="button" to="/map">Map</router-link>
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 
 <script>
 import game from "../data.js";
-
-
-
-setTimeout(() => {
-    let sections = document.querySelectorAll(".scrollto");
-    let pos = 0;
-    let scroll = 0;
-    let flag = true;
-    let offset = 0;
-    window.addEventListener("wheel", e => {
-      // If the function is allowed to run
-      if (flag) {
-        if (e.deltaY > 5 && pos < sections.length - 1) {
-          pos += 1;
-          offset = sections[pos].offsetTop;
-          window.scrollTo({
-            behavior: "smooth",
-            top: offset
-          });
-          flag = false;
-          // Allow the listener to work again
-          setTimeout(() => {
-            flag = true;
-          }, 1000);
-        } else if (e.deltaY < -5 && pos > 0) {
-          pos -= 1;
-          offset = sections[pos].offsetTop;
-          window.scrollTo({
-            behavior: "smooth",
-            top: offset
-          });
-          flag = false;
-          // Allow the listener to work again
-          setTimeout(() => {
-            flag = true;
-          }, 1000);
-        }
-      }
-    });
-  }, 200);
 
 export default {
   data() {
@@ -132,11 +103,17 @@ export default {
 
 <style lang="scss" scoped>
 .big-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+  scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  overflow-y: scroll;
+  height: 100vh;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
   h3 {
     font-size: 2em;
@@ -148,6 +125,9 @@ export default {
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
+    position: sticky;
+    top: 0px;
+    scroll-snap-align: center;
     .container__text {
       display: flex;
       flex-direction: column;
@@ -178,6 +158,9 @@ export default {
     height: 100vh;
     width: 100vw;
     background-color: black;
+    position: sticky;
+    top: 0px;
+    scroll-snap-align: center;
     .video {
       width: 100vw;
       height: 100vh;
@@ -188,6 +171,9 @@ export default {
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
+    position: sticky;
+    top: 0px;
+    scroll-snap-align: center;
     .container__text {
       display: flex;
       flex-direction: column;
@@ -219,6 +205,9 @@ export default {
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
+    position: sticky;
+    top: 0px;
+    scroll-snap-align: center;
     .image__slider {
       height: 100%;
       width: 100%;
@@ -234,6 +223,9 @@ export default {
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
+    position: sticky;
+    top: 0px;
+    scroll-snap-align: center;
     .container__text {
       display: flex;
       flex-direction: column;
@@ -253,6 +245,9 @@ export default {
     height: 100vh;
     width: 100vw;
     background-color: black;
+    position: sticky;
+    top: 0px;
+    scroll-snap-align: center;
     .video {
       width: 100vw;
       height: 100vh;

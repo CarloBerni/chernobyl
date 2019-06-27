@@ -26002,43 +26002,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-setTimeout(function () {
-  var sections = document.querySelectorAll(".scrollto");
-  var pos = 0;
-  var scroll = 0;
-  var flag = true;
-  var offset = 0;
-  window.addEventListener("wheel", function (e) {
-    // If the function is allowed to run
-    if (flag) {
-      if (e.deltaY > 5 && pos < sections.length - 1) {
-        pos += 1;
-        offset = sections[pos].offsetTop;
-        window.scrollTo({
-          behavior: "smooth",
-          top: offset
-        });
-        flag = false; // Allow the listener to work again
-
-        setTimeout(function () {
-          flag = true;
-        }, 1000);
-      } else if (e.deltaY < -5 && pos > 0) {
-        pos -= 1;
-        offset = sections[pos].offsetTop;
-        window.scrollTo({
-          behavior: "smooth",
-          top: offset
-        });
-        flag = false; // Allow the listener to work again
-
-        setTimeout(function () {
-          flag = true;
-        }, 1000);
-      }
-    }
-  });
-}, 200);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   data: function data() {
     return {
@@ -26074,194 +26048,206 @@ exports.default = _default;
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "big-container" }, [
-    _c(
-      "section",
-      {
-        staticClass: "section__1 scrollto",
-        style: { backgroundImage: "url(" + _vm.step.background__1 + ")" }
-      },
-      [
-        _c("div", { staticClass: "container__text" }, [
-          _vm.$route.params.id
-            ? _c("h1", { staticClass: "texte__title__left lines" }, [
-                _vm._v(_vm._s(_vm.step.title))
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.$route.params.id
-            ? _c("p", [_vm._v(_vm._s(_vm.step.profession))])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.$route.params.id
-            ? _c("p", { staticClass: "big__texte lines" }, [
-                _vm._v(_vm._s(_vm.step.texte__1))
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.$route.params.id
-            ? _c("p", { staticClass: "big__texte lines" }, [
-                _vm._v(_vm._s(_vm.step.texte__2))
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.$route.params.id
-            ? _c("p", { staticClass: "big__texte lines" }, [
-                _vm._v(_vm._s(_vm.step.texte__3))
-              ])
-            : _vm._e()
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _c("section", { staticClass: "section__2 scrollto" }, [
+    _c("div", { staticClass: "container" }, [
       _c(
-        "video",
+        "section",
         {
-          staticClass: "video",
-          attrs: { autoplay: "", muted: "", loop: "" },
-          domProps: { muted: true }
+          staticClass: "section__1",
+          style: { backgroundImage: "url(" + _vm.step.background__1 + ")" }
         },
-        [_c("source", { attrs: { src: _vm.step.video__1 } })]
-      )
-    ]),
-    _vm._v(" "),
-    _c(
-      "section",
-      {
-        staticClass: "section__3 scrollto",
-        style: { backgroundImage: "url(" + _vm.step.background__2 + ")" }
-      },
-      [
-        _c("div", { staticClass: "container__text" }, [
-          _vm.$route.params.id
-            ? _c("h1", { staticClass: "texte__title__right lines" }, [
-                _vm._v(_vm._s(_vm.step.sentence__1))
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.$route.params.id
-            ? _c("p", { staticClass: "lines" }, [
-                _vm._v(_vm._s(_vm.step.sentence__2))
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.$route.params.id
-            ? _c("p", { staticClass: "lines" }, [
-                _c("span", [_vm._v(_vm._s(_vm.step.sentence__3))]),
-                _vm._v("\n        " + _vm._s(_vm.step.sentence__4) + "\n      ")
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.$route.params.id
-            ? _c("p", { staticClass: "lines" }, [
-                _vm._v(_vm._s(_vm.step.sentence__5))
-              ])
-            : _vm._e()
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _c(
-      "section",
-      {
-        staticClass: "section__4 scrollto",
-        style: { backgroundImage: "url(" + _vm.step.background__slider + ")" }
-      },
-      [
+        [
+          _c("div", { staticClass: "container__text" }, [
+            _vm.$route.params.id
+              ? _c("h1", { staticClass: "texte__title__left lines" }, [
+                  _vm._v(_vm._s(_vm.step.title))
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.$route.params.id
+              ? _c("p", [_vm._v(_vm._s(_vm.step.profession))])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.$route.params.id
+              ? _c("p", { staticClass: "big__texte lines" }, [
+                  _vm._v(_vm._s(_vm.step.texte__1))
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.$route.params.id
+              ? _c("p", { staticClass: "big__texte lines" }, [
+                  _vm._v(_vm._s(_vm.step.texte__2))
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.$route.params.id
+              ? _c("p", { staticClass: "big__texte lines" }, [
+                  _vm._v(_vm._s(_vm.step.texte__3))
+                ])
+              : _vm._e()
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("section", { staticClass: "section__2" }, [
         _c(
-          "carousel-3d",
+          "video",
           {
-            staticStyle: { "margin-top": "60px" },
-            attrs: { width: 1300, height: 850 }
+            staticClass: "video",
+            attrs: { autoplay: "", muted: "", loop: "" },
+            domProps: { muted: true }
           },
-          [
-            _c("slide", { attrs: { index: 0 } }, [
-              _c("img", {
-                staticClass: "image__slider",
-                attrs: { src: _vm.step.image__slider }
-              })
-            ]),
-            _vm._v(" "),
-            _c("slide", { attrs: { index: 1 } }, [
-              _c("img", {
-                staticClass: "image__slider",
-                attrs: { src: _vm.step.image__slider__2 }
-              })
-            ]),
-            _vm._v(" "),
-            _c("slide", { attrs: { index: 2 } }, [
-              _c("img", {
-                staticClass: "image__slider",
-                attrs: { src: _vm.step.image__slider__3 }
-              })
-            ]),
-            _vm._v(" "),
-            _c("slide", { attrs: { index: 3 } }, [
-              _c("img", {
-                staticClass: "image__slider",
-                attrs: { src: _vm.step.image__slider__4 }
-              })
-            ]),
-            _vm._v(" "),
-            _c("slide", { attrs: { index: 4 } }, [
-              _c("img", {
-                staticClass: "image__slider",
-                attrs: { src: _vm.step.image__slider__5 }
-              })
-            ])
-          ],
-          1
+          [_c("source", { attrs: { src: _vm.step.video__1 } })]
         )
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "section",
-      {
-        staticClass: "section__5 scrollto",
-        style: { backgroundImage: "url(" + _vm.step.background__3 + ")" }
-      },
-      [
-        _c("div", { staticClass: "container__text" }, [
-          _vm.$route.params.id
-            ? _c("p", { staticClass: "big__texte lines" }, [
-                _vm._v(_vm._s(_vm.step.sentence__6))
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.$route.params.id
-            ? _c("p", { staticClass: "big__texte lines" }, [
-                _vm._v(_vm._s(_vm.step.sentence__7))
-              ])
-            : _vm._e()
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _c("section", { staticClass: "section__6 scrollto" }, [
-      _c("video", { staticClass: "video", attrs: { autoplay: "", loop: "" } }, [
-        _c("source", { attrs: { src: _vm.step.video__2 } })
       ]),
       _vm._v(" "),
       _c(
-        "div",
-        { staticClass: "buttons" },
+        "section",
+        {
+          staticClass: "section__3",
+          style: { backgroundImage: "url(" + _vm.step.background__2 + ")" }
+        },
         [
-          _c("router-link", { staticClass: "button", attrs: { to: "/map" } }, [
-            _vm._v("Map")
-          ]),
-          _vm._v(" "),
-          _c("router-link", { staticClass: "button", attrs: { to: "/map" } }, [
-            _vm._v("Map")
-          ]),
-          _vm._v(" "),
-          _c("router-link", { staticClass: "button", attrs: { to: "/map" } }, [
-            _vm._v("Map")
+          _c("div", { staticClass: "container__text" }, [
+            _vm.$route.params.id
+              ? _c("h1", { staticClass: "texte__title__right lines" }, [
+                  _vm._v(_vm._s(_vm.step.sentence__1))
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.$route.params.id
+              ? _c("p", { staticClass: "lines" }, [
+                  _vm._v(_vm._s(_vm.step.sentence__2))
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.$route.params.id
+              ? _c("p", { staticClass: "lines" }, [
+                  _c("span", [_vm._v(_vm._s(_vm.step.sentence__3))]),
+                  _vm._v(
+                    "\n          " + _vm._s(_vm.step.sentence__4) + "\n        "
+                  )
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.$route.params.id
+              ? _c("p", { staticClass: "lines" }, [
+                  _vm._v(_vm._s(_vm.step.sentence__5))
+                ])
+              : _vm._e()
           ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "section",
+        {
+          staticClass: "section__4",
+          style: { backgroundImage: "url(" + _vm.step.background__slider + ")" }
+        },
+        [
+          _c(
+            "carousel-3d",
+            {
+              staticStyle: { "margin-top": "90px" },
+              attrs: { width: 1200, height: 800 }
+            },
+            [
+              _c("slide", { attrs: { index: 0 } }, [
+                _c("img", {
+                  staticClass: "image__slider",
+                  attrs: { src: _vm.step.image__slider }
+                })
+              ]),
+              _vm._v(" "),
+              _c("slide", { attrs: { index: 1 } }, [
+                _c("img", {
+                  staticClass: "image__slider",
+                  attrs: { src: _vm.step.image__slider__2 }
+                })
+              ]),
+              _vm._v(" "),
+              _c("slide", { attrs: { index: 2 } }, [
+                _c("img", {
+                  staticClass: "image__slider",
+                  attrs: { src: _vm.step.image__slider__3 }
+                })
+              ]),
+              _vm._v(" "),
+              _c("slide", { attrs: { index: 3 } }, [
+                _c("img", {
+                  staticClass: "image__slider",
+                  attrs: { src: _vm.step.image__slider__4 }
+                })
+              ]),
+              _vm._v(" "),
+              _c("slide", { attrs: { index: 4 } }, [
+                _c("img", {
+                  staticClass: "image__slider",
+                  attrs: { src: _vm.step.image__slider__5 }
+                })
+              ])
+            ],
+            1
+          )
         ],
         1
-      )
+      ),
+      _vm._v(" "),
+      _c(
+        "section",
+        {
+          staticClass: "section__5",
+          style: { backgroundImage: "url(" + _vm.step.background__3 + ")" }
+        },
+        [
+          _c("div", { staticClass: "container__text" }, [
+            _vm.$route.params.id
+              ? _c("p", { staticClass: "big__texte lines" }, [
+                  _vm._v(_vm._s(_vm.step.sentence__6))
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.$route.params.id
+              ? _c("p", { staticClass: "big__texte lines" }, [
+                  _vm._v(_vm._s(_vm.step.sentence__7))
+                ])
+              : _vm._e()
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("section", { staticClass: "section__6" }, [
+        _c(
+          "video",
+          { staticClass: "video", attrs: { autoplay: "", loop: "" } },
+          [_c("source", { attrs: { src: _vm.step.video__2 } })]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "buttons" },
+          [
+            _c(
+              "router-link",
+              { staticClass: "button", attrs: { to: "/map" } },
+              [_vm._v("Map")]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { staticClass: "button", attrs: { to: "/map" } },
+              [_vm._v("Map")]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              { staticClass: "button", attrs: { to: "/map" } },
+              [_vm._v("Map")]
+            )
+          ],
+          1
+        )
+      ])
     ])
   ])
 }
@@ -26373,13 +26359,6 @@ _vue.default.use(_vueCarousel3d.default);
 new _vue.default({
   router: _router.default
 }).$mount('#root');
-/*
- var tl = new TimelineLite();
-var lines = $('.lines');
-for(var i =0; i < 10; i++) {
-var fromY = (i%1==0) ? +50 :50;
-tl.from(lines[i],1,{y:fromY, autoAlpha:0,ease:Power3.easeOut}, i*1)
-};*/
 },{"vue":"../node_modules/vue/dist/vue.common.js","vue-carousel-3d":"../node_modules/vue-carousel-3d/dist/vue-carousel-3d.min.js","./router":"router.js","./assets/scss/styles.scss":"assets/scss/styles.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -26408,7 +26387,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53108" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49390" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
