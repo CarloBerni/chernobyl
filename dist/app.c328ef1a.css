@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
-.big-container video[data-v-ca6720] {
+.big-container .video[data-v-ca6720] {
   width: 100%;
   height: 100%;
 }
@@ -303,6 +303,7 @@
   scroll-snap-align: center;
 }
 .big-container .section__2 .video[data-v-77c20f] {
+  background-color: black;
   width: 100vw;
   height: 100vh;
 }
@@ -398,6 +399,145 @@
 }
 .big-container .section__6 .buttons .button[data-v-77c20f] {
   margin: 20px;
+}
+@media (max-width: 500px) {
+.big-container[data-v-77c20f] {
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    overflow-y: scroll;
+    height: 100vh;
+}
+.big-container .container[data-v-77c20f] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.big-container .section__1[data-v-77c20f] {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.big-container .section__1 .container__text[data-v-77c20f] {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+.big-container .section__1 .container__text .texte__title__left[data-v-77c20f] {
+    color: #a50104;
+    font-size: 31px;
+    letter-spacing: 0.05em;
+}
+.big-container .section__1 .container__text h2[data-v-77c20f] {
+    margin: 8px;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+.big-container .section__1 .container__text .big__texte[data-v-77c20f] {
+    font-size: 16px;
+    color: white;
+    line-height: 16px;
+    margin: 20px;
+    text-align: left;
+}
+.big-container .section__3[data-v-77c20f] {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    scroll-snap-align: center;
+}
+.big-container .section__3 .container__text[data-v-77c20f] {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.big-container .section__3 .container__text P[data-v-77c20f] {
+    margin: 20px;
+    color: white;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+.big-container .section__3 .container__text .texte__title__right[data-v-77c20f] {
+    color: #a50104;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    margin: 0px;
+}
+.big-container .section__4[data-v-77c20f] {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    top: 0px;
+    scroll-snap-align: center;
+}
+.big-container .section__4 .bar[data-v-77c20f] {
+    display: block;
+    height: 20px;
+    width: 100%;
+    transform: rotate(90deg);
+}
+.big-container .section__4 .bar span[data-v-77c20f] {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: scroll-data-v-77c20f;
+    background: none repeat scroll 0 0 white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    height: 8px;
+    margin: 6px auto;
+    width: 4px;
+}
+@keyframes scroll-data-v-77c20f {
+0% {
+      opacity: 1;
+      transform: translateY(0px);
+}
+100% {
+      opacity: 0;
+      transform: translateY(20px);
+}
+}
+.big-container .section__5[data-v-77c20f] {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    top: 0px;
+    scroll-snap-align: center;
+}
+.big-container .section__5 .container__text[data-v-77c20f] {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+.big-container .section__5 .container__text .big__texte[data-v-77c20f] {
+    font-size: 16px;
+    color: white;
+    line-height: 16px;
+    margin: 20px;
+}
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

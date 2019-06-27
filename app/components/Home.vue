@@ -25,7 +25,7 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  video {
+  .video {
     width: 100%;
     height: 100%;
   }
@@ -33,6 +33,7 @@ export default {
 
 .video__container {
   background-color: black;
+
 }
 
 .button--home {
