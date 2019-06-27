@@ -45,8 +45,8 @@ export default {
       "image__slider__3": "https://i.goopics.net/kjrwb.png",
       "image__slider__4": "https://i.goopics.net/VvQbZ.png",
       "image__slider__5": "https://i.goopics.net/dRXaE.png",
-      "video__2": mp4.outroIgor,
       "image__bg": "https://i.goopics.net/K8DmD.png",
+      "video__2": mp4.outroIgor
     },
   ]
  }

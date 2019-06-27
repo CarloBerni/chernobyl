@@ -14,7 +14,7 @@
         </div>
       </section>
       <section class="section__2" v-bind:style="{ backgroundImage: 'url(' + step.image__bg + ')' }">
-        <video class="video" id="video" v-on:mouseover="mouseover" controls muted loop>
+        <video class="video" autoplay muted loop>
           <source v-bind:src="step.video__1">
         </video>
       </section>
@@ -64,7 +64,7 @@
         </div>
       </section>
       <section class="section__6">
-        <video class="video" id="videa" v-on:mouseover="mouseaver" controls loop>
+        <video class="video" autoplay loop>
           <source v-bind:src="step.video__2">
         </video>
         <div class="buttons">
@@ -79,7 +79,6 @@
 
 <script>
 import game from "../data.js";
-
 export default {
   data() {
     return {
@@ -96,15 +95,7 @@ export default {
       return game.steps.find(step => {
         return step.id === parseInt(this.$route.params.id, 10);
       });
-    },
-    mouseover: function() {
-      var video = document.getElementById('video');
-      video.play();
-    },
-    mouseaver: function() {
-      var videa = document.getElementById('videa');
-      videa.play();
-    },
+    }
   }
 };
 </script>
@@ -258,7 +249,10 @@ export default {
       height: 100vh;
     }
     .buttons {
-      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       .button {
         margin: 20px;
       }
