@@ -40,11 +40,13 @@ export default {
       "background__3": "https://i.goopics.net/dR7EL.png",
       "sentence__6": "<< J'étais complètement dans le noir. . . Pendant que j'étais occupé avec la turbine, un électricien, Baranov - qui est décédé plus tard à l'hôpital de Moscou - s'est précipité et a commencé à pomper l'hydrogène qui a refroidi le générateur à turbine. Ses actions ont empeché une autre explosion. >>",
       "background__slider": "https://i.goopics.net/K8wm3.png",
-      "image__slider": "https://i.goopics.net/VvmDV.png",
-      "image__slider__2": "https://i.goopics.net/qvpGk.png",
-      "image__slider__3": "https://i.goopics.net/kjVky.png",
-      "image__slider__4": "https://i.goopics.net/aOjKZ.png",
-      "image__slider__5": "https://i.goopics.net/gE1Ko.png",
+      "image__slider": "https://i.goopics.net/dRXaO.png",
+      "image__slider__2": "https://i.goopics.net/NvKQY.png",
+      "image__slider__3": "https://i.goopics.net/kjrwb.png",
+      "image__slider__4": "https://i.goopics.net/VvQbZ.png",
+      "image__slider__5": "https://i.goopics.net/dRXaE.png",
+      "video__2": mp4.outroIgor,
+      "image__bg": "https://i.goopics.net/K8DmD.png",
     },
   ]
  }

@@ -15081,14 +15081,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $ec7312 = exports.default || module.exports;
+        var $ca6720 = exports.default || module.exports;
       
-      if (typeof $ec7312 === 'function') {
-        $ec7312 = $ec7312.options;
+      if (typeof $ca6720 === 'function') {
+        $ca6720 = $ca6720.options;
       }
     
         /* template */
-        Object.assign($ec7312, (function () {
+        Object.assign($ca6720, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -15132,7 +15132,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-ec7312",
+            _scopeId: "data-v-ca6720",
             functional: undefined
           };
         })());
@@ -15145,9 +15145,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$ec7312', $ec7312);
+            api.createRecord('$ca6720', $ca6720);
           } else {
-            api.reload('$ec7312', $ec7312);
+            api.reload('$ca6720', $ca6720);
           }
         }
 
@@ -15190,14 +15190,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $0f2a57 = exports.default || module.exports;
+        var $0c4d4b = exports.default || module.exports;
       
-      if (typeof $0f2a57 === 'function') {
-        $0f2a57 = $0f2a57.options;
+      if (typeof $0c4d4b === 'function') {
+        $0c4d4b = $0c4d4b.options;
       }
     
         /* template */
-        Object.assign($0f2a57, (function () {
+        Object.assign($0c4d4b, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -15280,7 +15280,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-0f2a57",
+            _scopeId: "data-v-0c4d4b",
             functional: undefined
           };
         })());
@@ -15293,9 +15293,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$0f2a57', $0f2a57);
+            api.createRecord('$0c4d4b', $0c4d4b);
           } else {
-            api.reload('$0f2a57', $0f2a57);
+            api.reload('$0c4d4b', $0c4d4b);
           }
         }
 
@@ -15363,24 +15363,26 @@ var _default = {
     "background__3": "https://i.goopics.net/dR7EL.png",
     "sentence__6": "<< J'étais complètement dans le noir. . . Pendant que j'étais occupé avec la turbine, un électricien, Baranov - qui est décédé plus tard à l'hôpital de Moscou - s'est précipité et a commencé à pomper l'hydrogène qui a refroidi le générateur à turbine. Ses actions ont empeché une autre explosion. >>",
     "background__slider": "https://i.goopics.net/K8wm3.png",
-    "image__slider": "https://i.goopics.net/VvmDV.png",
-    "image__slider__2": "https://i.goopics.net/qvpGk.png",
-    "image__slider__3": "https://i.goopics.net/kjVky.png",
-    "image__slider__4": "https://i.goopics.net/aOjKZ.png",
-    "image__slider__5": "https://i.goopics.net/gE1Ko.png"
+    "image__slider": "https://i.goopics.net/dRXaO.png",
+    "image__slider__2": "https://i.goopics.net/NvKQY.png",
+    "image__slider__3": "https://i.goopics.net/kjrwb.png",
+    "image__slider__4": "https://i.goopics.net/VvQbZ.png",
+    "image__slider__5": "https://i.goopics.net/dRXaE.png",
+    "video__2": mp4.outroIgor,
+    "image__bg": "https://i.goopics.net/K8DmD.png"
   }]
 };
 exports.default = _default;
 },{"../app/assets/images/*.mp4":"assets/images/*.mp4"}],"components/Sound.vue":[function(require,module,exports) {
 
-        var $60c28f = exports.default || module.exports;
+        var $9c9556 = exports.default || module.exports;
       
-      if (typeof $60c28f === 'function') {
-        $60c28f = $60c28f.options;
+      if (typeof $9c9556 === 'function') {
+        $9c9556 = $9c9556.options;
       }
     
         /* template */
-        Object.assign($60c28f, (function () {
+        Object.assign($9c9556, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -15409,9 +15411,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$60c28f', $60c28f);
+            api.createRecord('$9c9556', $9c9556);
           } else {
-            api.reload('$60c28f', $60c28f);
+            api.reload('$9c9556', $9c9556);
           }
         }
 
@@ -17707,14 +17709,14 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $05c120 = exports.default || module.exports;
+        var $d58708 = exports.default || module.exports;
       
-      if (typeof $05c120 === 'function') {
-        $05c120 = $05c120.options;
+      if (typeof $d58708 === 'function') {
+        $d58708 = $d58708.options;
       }
     
         /* template */
-        Object.assign($05c120, (function () {
+        Object.assign($d58708, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -25889,7 +25891,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-05c120",
+            _scopeId: "data-v-d58708",
             functional: undefined
           };
         })());
@@ -25902,9 +25904,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$05c120', $05c120);
+            api.createRecord('$d58708', $d58708);
           } else {
-            api.reload('$05c120', $05c120);
+            api.reload('$d58708', $d58708);
           }
         }
 
@@ -26024,26 +26026,18 @@ var _default = {
       return _data.default.steps.find(function (step) {
         return step.id === parseInt(_this.$route.params.id, 10);
       });
-    },
-    mouseover: function mouseover() {
-      var video = document.getElementById('video');
-      video.play();
-    },
-    mouseaver: function mouseaver() {
-      var videa = document.getElementById('videa');
-      videa.play();
     }
   }
 };
 exports.default = _default;
-        var $b72ef4 = exports.default || module.exports;
+        var $77c20f = exports.default || module.exports;
       
-      if (typeof $b72ef4 === 'function') {
-        $b72ef4 = $b72ef4.options;
+      if (typeof $77c20f === 'function') {
+        $77c20f = $77c20f.options;
       }
     
         /* template */
-        Object.assign($b72ef4, (function () {
+        Object.assign($77c20f, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -26089,18 +26083,24 @@ exports.default = _default;
         ]
       ),
       _vm._v(" "),
-      _c("section", { staticClass: "section__2" }, [
-        _c(
-          "video",
-          {
-            staticClass: "video",
-            attrs: { id: "video", controls: "", muted: "", loop: "" },
-            domProps: { muted: true },
-            on: { mouseover: _vm.mouseover }
-          },
-          [_c("source", { attrs: { src: _vm.step.video__1 } })]
-        )
-      ]),
+      _c(
+        "section",
+        {
+          staticClass: "section__2",
+          style: { backgroundImage: "url(" + _vm.step.image__bg + ")" }
+        },
+        [
+          _c(
+            "video",
+            {
+              staticClass: "video",
+              attrs: { autoplay: "", muted: "", loop: "" },
+              domProps: { muted: true }
+            },
+            [_c("source", { attrs: { src: _vm.step.video__1 } })]
+          )
+        ]
+      ),
       _vm._v(" "),
       _c(
         "section",
@@ -26217,11 +26217,7 @@ exports.default = _default;
       _c("section", { staticClass: "section__6" }, [
         _c(
           "video",
-          {
-            staticClass: "video",
-            attrs: { id: "videa", controls: "", loop: "" },
-            on: { mouseover: _vm.mouseaver }
-          },
+          { staticClass: "video", attrs: { autoplay: "", loop: "" } },
           [_c("source", { attrs: { src: _vm.step.video__2 } })]
         ),
         _vm._v(" "),
@@ -26260,7 +26256,7 @@ render._withStripped = true
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-b72ef4",
+            _scopeId: "data-v-77c20f",
             functional: undefined
           };
         })());
@@ -26273,9 +26269,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$b72ef4', $b72ef4);
+            api.createRecord('$77c20f', $77c20f);
           } else {
-            api.reload('$b72ef4', $b72ef4);
+            api.reload('$77c20f', $77c20f);
           }
         }
 
@@ -26389,7 +26385,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56013" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53121" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
