@@ -6,11 +6,11 @@
         v-bind:style="{ backgroundImage: 'url(' + step.background__1 + ')' }"
       >
         <div class="container__text">
-          <h1 class="texte__title__left lines" v-if="$route.params.id">{{step.title}}</h1>
-          <p v-if="$route.params.id">{{step.profession}}</p>
-          <p class="big__texte lines" v-if="$route.params.id">{{step.texte__1}}</p>
-          <p class="big__texte lines" v-if="$route.params.id">{{step.texte__2}}</p>
-          <p class="big__texte lines" v-if="$route.params.id">{{step.texte__3}}</p>
+          <h1 class="texte__title__left " v-if="$route.params.id">{{step.title}}</h1>
+          <h2 v-if="$route.params.id">{{step.profession}}</h2>
+          <p class="big__texte " v-if="$route.params.id">{{step.texte__1}}</p>
+          <p class="big__texte " v-if="$route.params.id">{{step.texte__2}}</p>
+          <p class="big__texte " v-if="$route.params.id">{{step.texte__3}}</p>
         </div>
       </section>
       <section class="section__2">
@@ -23,13 +23,13 @@
         v-bind:style="{ backgroundImage: 'url(' + step.background__2 + ')' }"
       >
         <div class="container__text">
-          <h1 class="texte__title__right lines" v-if="$route.params.id">{{step.sentence__1}}</h1>
-          <p class="lines" v-if="$route.params.id">{{step.sentence__2}}</p>
-          <p class="lines" v-if="$route.params.id">
+          <h1 class="texte__title__right " v-if="$route.params.id">{{step.sentence__1}}</h1>
+          <p  v-if="$route.params.id">{{step.sentence__2}}</p>
+          <p  v-if="$route.params.id">
             <span>{{step.sentence__3}}</span>
             {{step.sentence__4}}
           </p>
-          <p class="lines" v-if="$route.params.id">{{step.sentence__5}}</p>
+          <p  v-if="$route.params.id">{{step.sentence__5}}</p>
         </div>
       </section>
       <section
@@ -59,8 +59,8 @@
         v-bind:style="{ backgroundImage: 'url(' + step.background__3 + ')' }"
       >
         <div class="container__text">
-          <p class="big__texte lines" v-if="$route.params.id">{{step.sentence__6}}</p>
-          <p class="big__texte lines" v-if="$route.params.id">{{step.sentence__7}}</p>
+          <p class="big__texte " v-if="$route.params.id">{{step.sentence__6}}</p>
+          <p class="big__texte " v-if="$route.params.id">{{step.sentence__7}}</p>
         </div>
       </section>
       <section class="section__6">
@@ -114,12 +114,6 @@ export default {
     flex-wrap: wrap;
     flex-direction: column;
   }
-
-  h3 {
-    font-size: 2em;
-    text-align: center;
-    color: #fff;
-  }
   .section__1 {
     height: 100vh;
     width: 100vw;
@@ -141,7 +135,7 @@ export default {
         letter-spacing: 0.05em;
         margin: 20px;
       }
-      p {
+      h2 {
         margin: 20px;
         color: white;
         font-size: 30px;
@@ -149,8 +143,11 @@ export default {
         font-weight: bold;
       }
       .big__texte {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 29px;
+        color: white;
+        letter-spacing: 0.05em;
+        margin: 20px;
       }
     }
   }
@@ -179,19 +176,18 @@ export default {
       flex-direction: column;
       flex-wrap: wrap;
       margin-right: 75px;
-      margin-top: 90px;
+      margin-top: 180px;
       margin-left: 780px;
       .texte__title__right {
         color: #a50104;
-        font-size: 30px;
-        font-weight: bold;
+        font-size: 22px;
         letter-spacing: 0.05em;
         margin: 30px;
       }
       p {
         margin: 30px;
         color: white;
-        font-size: 24px;
+        font-size: 22px;
         letter-spacing: 0.05em;
         span {
           font-weight: bold;
@@ -230,13 +226,13 @@ export default {
       display: flex;
       flex-direction: column;
       margin-left: 150px;
-      margin-top: 180px;
+      margin-top: 250px;
       margin-right: 790px;
       .big__texte {
         color: white;
         letter-spacing: 0.05em;
         margin: 20px;
-        font-size: 24px;
+        font-size: 22px;
         line-height: 29px;
       }
     }
