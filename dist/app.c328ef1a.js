@@ -15367,9 +15367,7 @@ var _default = {
     "image__slider__2": "https://i.goopics.net/qvpGk.png",
     "image__slider__3": "https://i.goopics.net/kjVky.png",
     "image__slider__4": "https://i.goopics.net/aOjKZ.png",
-    "image__slider__5": "https://i.goopics.net/gE1Ko.png",
-    "video__1": mp4.igor,
-    "video__2": mp4.outroIgor
+    "image__slider__5": "https://i.goopics.net/gE1Ko.png"
   }]
 };
 exports.default = _default;
@@ -26378,7 +26376,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52484" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52549" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
