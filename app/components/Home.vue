@@ -1,7 +1,7 @@
 <template>
   <div class="big-container video__container">
     <div class="container__button">
-      <video class="video" autoplay loop>
+      <video class="video" id="videoHome" v-on:mouseover="mediaHome" loop>
         <source src="../assets/images/Intro.mp4">
       </video>
       <router-link class="button button--home" to="/intro">Commencer</router-link>
@@ -12,7 +12,14 @@
 <script>
 export default {
   data() {
-    return {};
+    return {}
+  },
+  methods: {
+  
+    mediaHome: function () {
+      let videoHome = document.getElementById('videoHome');
+      videoHome.play();
+    }
   }
 };
 </script>
