@@ -13,8 +13,8 @@
           <p class="big__texte" v-if="$route.params.id">{{step.texte__3}}</p>
         </div>
       </section>
-      <section class="section__2" v-bind:style="{ backgroundImage: 'url(' + step.image__bg + ')' }">
-        <video class="video" autoplay loop>
+      <section class="section__2">
+        <video class="video" autoplay controls loop>
           <source v-bind:src="step.video__1">
         </video>
       </section>
@@ -70,7 +70,7 @@
         </div>
       </section>
       <section class="section__6">
-        <video class="video" autoplay loop>
+        <video class="video" autoplay controls loop>
           <source v-bind:src="step.video__2">
         </video>
         <div class="buttons">
@@ -159,17 +159,21 @@ export default {
   .section__2 {
     height: 100vh;
     width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: sticky;
     top: 0px;
     scroll-snap-align: center;
+  }
+    img {
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+    }
     .video {
       background-color: black;
       width: 100vw;
       height: 100vh;
     }
-  }
   .section__3 {
     height: 100vh;
     width: 100vw;
@@ -266,13 +270,13 @@ export default {
     }
   }
 }
-@media (max-width:500px) {
-  .big-container{
+@media (max-width: 500px) {
+  .big-container {
     scroll-snap-type: y mandatory;
     scroll-snap-points-y: repeat(100vh);
     overflow-y: scroll;
     height: 100vh;
-      .container {
+    .container {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -286,31 +290,31 @@ export default {
       background-size: cover;
       text-align: center;
 
-        .container__text{
+      .container__text {
         display: flex;
         justify-content: center;
         flex-direction: column;
         margin-left: 0px;
         margin-top: 0px;
         margin-right: 0px;
-        .texte__title__left{
+        .texte__title__left {
           color: #a50104;
           font-size: 31px;
           letter-spacing: 0.05em;
         }
-        h2{
+        h2 {
           margin: 8px;
           color: white;
           font-size: 22px;
           letter-spacing: 0.05em;
           font-weight: bold;
         }
-        .big__texte{
+        .big__texte {
           font-size: 16px;
           color: white;
           line-height: 16px;
           margin: 20px;
-          text-align:left;
+          text-align: left;
         }
       }
     }
@@ -331,7 +335,7 @@ export default {
         margin-top: 0px;
         margin-left: 0px;
 
-        P{
+        p {
           margin: 20px;
           color: white;
           font-size: 16px;
@@ -339,15 +343,15 @@ export default {
           letter-spacing: 0.05em;
         }
 
-        .texte__title__right{
-           color: #a50104;
+        .texte__title__right {
+          color: #a50104;
           font-size: 22px;
           letter-spacing: 0.05em;
           margin: 0px;
         }
       }
     }
-    .section__4{
+    .section__4 {
       height: 100vh;
       width: 100vw;
       background-repeat: no-repeat;
@@ -356,13 +360,13 @@ export default {
       top: 0px;
       scroll-snap-align: center;
 
-      .bar{
+      .bar {
         display: block;
         height: 20px;
         width: 100%;
-        transform:rotate(90deg);
+        transform: rotate(90deg);
 
-        span{
+        span {
           animation-duration: 1s;
           animation-fill-mode: both;
           animation-iteration-count: infinite;
@@ -377,19 +381,18 @@ export default {
 
           @keyframes scroll {
             0% {
-                opacity: 1;
-                transform: translateY(0px);
+              opacity: 1;
+              transform: translateY(0px);
             }
             100% {
-                opacity: 0;
-                transform: translateY(20px);
+              opacity: 0;
+              transform: translateY(20px);
             }
           }
         }
       }
-      
     }
-    .section__5{
+    .section__5 {
       height: 100vh;
       width: 100vw;
       background-repeat: no-repeat;
@@ -398,14 +401,14 @@ export default {
       top: 0px;
       scroll-snap-align: center;
 
-      .container__text{
+      .container__text {
         display: flex;
         flex-direction: column;
         margin-left: 0px;
         margin-top: 0px;
         margin-right: 0px;
 
-        .big__texte{
+        .big__texte {
           font-size: 16px;
           color: white;
           line-height: 16px;

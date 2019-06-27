@@ -45,7 +45,7 @@ export default {
       "image__slider__3": "https://i.goopics.net/kjrwb.png",
       "image__slider__4": "https://i.goopics.net/VvQbZ.png",
       "image__slider__5": "https://i.goopics.net/dRXaE.png",
-      "image__bg": "https://i.goopics.net/K8DmD.png",
+      "video__1": mp4.igor,
       "video__2": mp4.outroIgor
     },
     {
@@ -70,7 +70,6 @@ export default {
       "image__slider__3": "https://i.goopics.net/AJjRa.png",
       "image__slider__4": "https://i.goopics.net/LQ0D8.png",
       "image__slider__5": "https://i.goopics.net/5q4m7.png",
-      "image__bg": "https://i.goopics.net/K8DmD.png",
       "video__1": mp4.liquidateur,
       "video__2": mp4.outroIgor
     },
@@ -94,7 +93,6 @@ export default {
       "image__slider__3": "https://i.goopics.net/AJjga.png",
       "image__slider__4": "https://i.goopics.net/LQ0P8.png",
       "image__slider__5": "https://i.goopics.net/5q4R7.png",
-      "image__bg": "https://i.goopics.net/K8DmD.png",
       "video__1": mp4.fillette,
       "video__2": mp4.outroIgor
     },
@@ -119,7 +117,6 @@ export default {
       "image__slider__4": "https://i.goopics.net/LQ0P8.png",
       "image__slider__5": "https://i.goopics.net/5q4R7.png",
       "image__bg": "https://i.goopics.net/K8DmD.png",
-      "video__1": mp4.fillette,
       "video__2": mp4.outroIgor
     },
   ]
