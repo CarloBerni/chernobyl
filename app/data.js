@@ -45,7 +45,7 @@ export default {
       "image__slider__3": "https://i.goopics.net/kjrwb.png",
       "image__slider__4": "https://i.goopics.net/VvQbZ.png",
       "image__slider__5": "https://i.goopics.net/dRXaE.png",
-      "video__1": mp4.igor,
+      "video__1": mp4.yuri,
       "video__2": mp4.outroIgor
     },
     {
@@ -111,12 +111,12 @@ export default {
       "sentence__7": "Il n’y avait vraiment plus rien à faire pour Dyatlov. Des pompiers professionnels de Tchernobyl et de Pripyat ont été appelés, et 27 d’entre eux ont été envoyés à l’hôpital cette nuit-là.",
       "sentence__8": "Leur courage et leur détermination ont aidé à maîtriser le feu à l’aube, mais personne ne portait de vêtements de protection cette nuit-là et les seuls dosimètres disponibles ne pouvaient même pas fournir une lecture précise des rayonnements qui s’échappaient.",
       "background__slider": "https://i.goopics.net/K8wm3.png",
-      "image__slider": "https://i.goopics.net/vQlGg.png",
-      "image__slider__2": "https://i.goopics.net/7qRWG.png",
-      "image__slider__3": "https://i.goopics.net/AJjga.png",
-      "image__slider__4": "https://i.goopics.net/LQ0P8.png",
-      "image__slider__5": "https://i.goopics.net/5q4R7.png",
-      "image__bg": "https://i.goopics.net/K8DmD.png",
+      "image__slider": "https://i.goopics.net/8g5r7.png",
+      "image__slider__2": "https://i.goopics.net/OKmW2.png",
+      "image__slider__3": "https://i.goopics.net/0WXpO.png",
+      "image__slider__4": "https://i.goopics.net/oAWGG.png",
+      "image__slider__5": "https://i.goopics.net/2WZvR.png",
+      "video__1": mp4.diatlov,
       "video__2": mp4.outroIgor
     },
   ]
