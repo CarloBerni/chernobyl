@@ -1,7 +1,7 @@
 <template>
   <div class="big-container video__container">
     <div class="container__button">
-      <video class="video" id="videoHome" v-on:mouseover="mediaHome" loop>
+      <video class="video" id="videoHome" v-on:mouseover="mediaHome" autoplay loop>
         <source src="../assets/images/Intro.mp4">
       </video>
       <router-link class="button button--home" to="/intro">Commencer</router-link>
