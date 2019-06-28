@@ -441,15 +441,9 @@
   bottom: 4vh;
   background-color: #A50104;
 }
-.big-container .section__6 .buttons .button--left[data-v-77c20f] {
-  left: 10vw;
-  text-align: center;
-}
 .big-container .section__6 .buttons .button--center[data-v-77c20f] {
   left: calc(50vw - 25px);
-}
-.big-container .section__6 .buttons .button--right[data-v-77c20f] {
-  left: calc(90vw - 85px);
+  text-align: center;
 }
 @media (max-width: 500px) {
 .big-container[data-v-77c20f] {

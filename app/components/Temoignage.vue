@@ -74,7 +74,7 @@
           <source v-bind:src="step.video__2">
         </video>
         <div class="buttons">
-          <router-link class="button button--left" to="/map">Map</router-link>
+          <router-link class="button button--center" to="/map">Map</router-link>
         </div>
       </section>
     </div>
@@ -277,16 +277,12 @@ export default {
         bottom: 4vh;
         background-color: #A50104;
       }
-      .button--left {
-        left: 10vw;
-        text-align: center;
-      }
+      
       .button--center {
         left: calc(50vw - 25px);
+        text-align: center;
       }
-      .button--right {
-        left: calc(90vw - 85px);
-      }
+      
     }
   }
 }
