@@ -1,6 +1,7 @@
 # WebDoc traitant le sujet de Chernobyl de façon immersive.
 
-
+À partir de la map vous pouvez selectionner les témoignagnes en surbrillance.
+ 
 
 
 ## LANGAGES ?
