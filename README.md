@@ -1,22 +1,22 @@
-#WebDoc traitant le sujet de Chernobyl de façon immersive.
+# WebDoc traitant le sujet de Chernobyl de façon immersive.
 
 
 
 
-##LANGAGES ?
+## LANGAGES ?
 
 HTML5, SCSS
 JavaScript,
 
 
-##FRAMEWORK ?
+## FRAMEWORK ?
 
 Vue.js
 
 
 
 
-##Vous pouvez clone le repo et utiliser les commandes :
+## Vous pouvez clone le repo et utiliser les commandes :
 
 npm install + npm run dev
 
