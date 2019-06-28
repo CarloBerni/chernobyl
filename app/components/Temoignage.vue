@@ -74,9 +74,7 @@
           <source v-bind:src="step.video__2">
         </video>
         <div class="buttons">
-          <router-link class="button button--left" to="/map">Previous</router-link>
-          <router-link class="button button--center" to="/map">Map</router-link>
-          <router-link class="button button--right" to="/map">Next</router-link>
+          <router-link class="button button--left" to="/map">Map</router-link>
         </div>
       </section>
     </div>

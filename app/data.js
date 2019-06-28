@@ -27,7 +27,7 @@ export default {
       "image__slider__4": "https://i.goopics.net/aOjKZ.png",
       "image__slider__5": "https://i.goopics.net/gE1Ko.png",
       "video__1": mp4.igor,
-      "video__2": mp4.outroIgor
+      "video__2": mp4.outroIgor,
     },
     {
       "id": 2,
@@ -103,10 +103,10 @@ export default {
       "profession": "Chef Ingénieur de la centrale",
       "texte__1": "\"On m’a évacué le premier jour. Le réacteur brulait.\"",
       "texte__2": "Le 26 avril 1986, il supervise les tests du réacteur 4 de la centrale tout en ignorant les consignes de sécurité imposées et en menaçant de renvoyer ses opérateurs, les tests en question seront à l'origine du plus gros accident nucléaire jamais connu.",
-      "background__2": "https://i.goopics.net/dRXmd.png",
+      "background__2": "https://i.goopics.net/wyQK9.png",
       "sentence__1": "Je me suis retrouvé confronté à un mensonge, un énorme mensonge qui a été répété à maintes reprises par les dirigeants de notre État.",
       "sentence__2": "Ces mensonges m’ont brisé. Je n’ai pas le moindre doute que les concepteurs du réacteur ont tout de suite trouvé la vraie cause de l’accident, mais qu’ils ont tout fait pour que les opérateurs se sentent coupables.",
-      "background__3": "https://i.goopics.net/NvKL1.png",
+      "background__3": "https://i.goopics.net/XvQlq.png",
       "sentence__6": "Je pensais que mes yeux sortaient de mes orbites. Il n’y avait aucun moyen de l’expliquer. Il était clair que ce n’était pas un accident normal, mais quelque chose de beaucoup plus terrible. C’était une catastrophe.",
       "sentence__7": "Il n’y avait vraiment plus rien à faire pour Dyatlov. Des pompiers professionnels de Tchernobyl et de Pripyat ont été appelés, et 27 d’entre eux ont été envoyés à l’hôpital cette nuit-là.",
       "sentence__8": "Leur courage et leur détermination ont aidé à maîtriser le feu à l’aube, mais personne ne portait de vêtements de protection cette nuit-là et les seuls dosimètres disponibles ne pouvaient même pas fournir une lecture précise des rayonnements qui s’échappaient.",
